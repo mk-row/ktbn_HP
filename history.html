@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HISTORY | 血便 Gaming Clan</title>
+  <meta name="description" content="血便ゲーミングクランの活動経歴・歴史。設立2019年から現在までの軌跡。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .history-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(139,0,0,0.2);
+      border: 1px solid rgba(139,0,0,0.2);
+      margin-bottom: 80px;
+    }
+    .history-stat {
+      background: var(--dark);
+      padding: 32px;
+      text-align: center;
+    }
+    .history-stat-num {
+      font-family: var(--font-display);
+      font-size: 48px;
+      color: var(--blood);
+      line-height: 1;
+    }
+    .history-stat-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--gray);
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+    @media (max-width: 600px) {
+      .history-stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-loader">
+    <div class="loader-text"><span>血</span>便</div>
+    <div class="loader-bar"></div>
+  </div>
+  <div class="scan-lines"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-blood">血</span>便
+    </a>
+    <button class="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="members.html">MEMBERS</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="philosophy.html">PHILOSOPHY</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="news.html">NEWS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <span class="page-hero-label">// OUR JOURNEY</span>
+    <h1 class="page-hero-title glitch" data-text="HISTORY">HISTORY</h1>
+    <p class="page-hero-desc">2019年の設立から現在まで、血便の軌跡を辿る。勝利も敗北も、全てが血便の歴史だ。</p>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+
+      <!-- Stats -->
+      <div class="history-stats reveal">
+        <div class="history-stat">
+          <div class="history-stat-num">2019</div>
+          <div class="history-stat-label">Founded</div>
+        </div>
+        <div class="history-stat">
+          <div class="history-stat-num">7+</div>
+          <div class="history-stat-label">Tournament Wins</div>
+        </div>
+        <div class="history-stat">
+          <div class="history-stat-num">16</div>
+          <div class="history-stat-label">Major Events</div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline" id="timeline-container"></div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>血</span>便</div>
+          <p>血便が出るくらい頑張る、総合ゲーミングクラン。2019年設立、メンバー15人弱。</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Top</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2019-2025 血便 Gaming Clan. All Rights Reserved.</p>
+        <p class="footer-slogan">「血便が出るくらい頑張る」</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    loadHistory('timeline-container');
+  </script>
+</body>
+</html>

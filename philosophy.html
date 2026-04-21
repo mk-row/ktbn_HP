@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHILOSOPHY | 血便 Gaming Clan</title>
+  <meta name="description" content="血便ゲーミングクランの信条・理念。「血便が出るくらい頑張る」という魂の宣言。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .manifesto {
+      text-align: center;
+      padding: 80px 40px;
+      position: relative;
+      border-top: 1px solid rgba(139,0,0,0.2);
+      border-bottom: 1px solid rgba(139,0,0,0.2);
+      margin: 60px 0;
+      overflow: hidden;
+    }
+    .manifesto::before {
+      content: '血便';
+      position: absolute;
+      font-family: var(--font-display);
+      font-size: 300px;
+      color: rgba(139,0,0,0.04);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      letter-spacing: 20px;
+      white-space: nowrap;
+    }
+    .manifesto-text {
+      font-family: var(--font-jp);
+      font-size: clamp(18px, 3vw, 28px);
+      font-weight: 900;
+      line-height: 2;
+      color: var(--white);
+      position: relative;
+      z-index: 1;
+    }
+    .manifesto-text .red { color: var(--blood); text-shadow: 0 0 20px rgba(255,0,0,0.4); }
+    .manifesto-text .dim { color: var(--gray); }
+
+    .values-section {
+      background: rgba(139,0,0,0.03);
+    }
+
+    .blood-quote {
+      font-family: var(--font-display);
+      font-size: clamp(60px, 12vw, 140px);
+      line-height: 0.9;
+      letter-spacing: 4px;
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--blood);
+      text-shadow: 0 0 40px rgba(200,0,0,0.3), 0 0 80px rgba(139,0,0,0.2);
+      position: relative;
+    }
+
+    .blood-quote::before,
+    .blood-quote::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--crimson));
+      margin: 20px auto;
+    }
+    .blood-quote::after {
+      background: linear-gradient(90deg, var(--crimson), transparent);
+    }
+
+    .rules-list {
+      list-style: none;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .rules-list li {
+      display: flex;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(139,0,0,0.1);
+      align-items: flex-start;
+    }
+
+    .rule-num {
+      font-family: var(--font-display);
+      font-size: 36px;
+      color: var(--crimson);
+      min-width: 50px;
+      line-height: 1;
+    }
+
+    .rule-content h4 {
+      font-family: var(--font-en);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .rule-content p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.8;
+    }
+
+    .final-cta {
+      text-align: center;
+      padding: 100px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(139,0,0,0.2) 0%, transparent 70%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-loader">
+    <div class="loader-text"><span>血</span>便</div>
+    <div class="loader-bar"></div>
+  </div>
+  <div class="scan-lines"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-blood">血</span>便
+    </a>
+    <button class="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="members.html">MEMBERS</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="philosophy.html">PHILOSOPHY</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="news.html">NEWS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Philosophy Hero -->
+  <div class="philosophy-hero">
+    <div class="philosophy-hero-bg"></div>
+    <div style="position:relative;z-index:1;">
+      <span class="section-label">// OUR SOUL</span>
+      <div class="big-slogan glitch" data-text="PHILOSOPHY">
+        PHILO<br><span style="color:var(--blood)">SOPHY</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blood Quote -->
+  <section class="section" style="padding: 40px 0;">
+    <div class="section-inner">
+      <div class="blood-quote reveal glitch" data-text="血便が出るくらい頑張る">
+        血便が出るくらい<br>頑張る
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto -->
+  <section class="section" style="padding: 0;">
+    <div class="section-inner">
+      <div class="manifesto reveal">
+        <p class="manifesto-text">
+          俺たちは<span class="red">限界</span>を超えたところで戦う。<br>
+          <span class="dim">痛みは</span>勲章だ。<span class="dim">敗北は</span>燃料だ。<br>
+          どんなゲームでも、どんな相手でも、<br>
+          <span class="red">全力で</span>ぶつかり続ける——<br>
+          <span class="dim">それが</span>血便の生き方だ。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credos -->
+  <section class="section values-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">// WHAT WE BELIEVE</span>
+        <h2 class="section-title">CREDOS</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="credos-grid">
+        <div class="credo-card reveal" data-delay="0">
+          <div class="credo-number">01</div>
+          <div class="credo-title">BLEED OR GO HOME</div>
+          <p class="credo-text">中途半端な努力は努力じゃない。血便が出るくらいの本気でなければ、そもそもやる意味がない。何事も全力で。それだけだ。</p>
+        </div>
+        <div class="credo-card reveal" data-delay="100">
+          <div class="credo-number">02</div>
+          <div class="credo-title">NO LIMITS, NO RULES</div>
+          <p class="credo-text">ゲームのジャンルは関係ない。FPSでも、MOBAでも、格闘ゲームでも、RPGでも——どこでも血便は最前線に立つ。縛りは不要だ。</p>
+        </div>
+        <div class="credo-card reveal" data-delay="200">
+          <div class="credo-number">03</div>
+          <div class="credo-title">CREW ABOVE ALL</div>
+          <p class="credo-text">勝利は個人でなくチームのものだ。仲間の成長が自分の成長。互いを高め合い、共に限界を超えていく。それが血便の絆だ。</p>
+        </div>
+        <div class="credo-card reveal" data-delay="0">
+          <div class="credo-number">04</div>
+          <div class="credo-title">EMBRACE THE PAIN</div>
+          <p class="credo-text">負けることを恐れるな。失敗を恥じるな。痛みの中にこそ成長がある。血便は敗北から学び、より強くなって帰ってくる。</p>
+        </div>
+        <div class="credo-card reveal" data-delay="100">
+          <div class="credo-number">05</div>
+          <div class="credo-title">RESPECT THE GAME</div>
+          <p class="credo-text">どんなゲームも、その世界を作り上げた者たちへのリスペクトを忘れない。本気でプレイすることが最大の敬意だ。</p>
+        </div>
+        <div class="credo-card reveal" data-delay="200">
+          <div class="credo-number">06</div>
+          <div class="credo-title">LEAVE A MARK</div>
+          <p class="credo-text">どの大会でも、どのマッチでも、血便の名を刻んで帰る。記憶に残るプレイを、語り継がれるクランを——それが俺たちの使命だ。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">// HOW WE LIVE</span>
+        <h2 class="section-title">THE RULES</h2>
+        <div class="section-divider"></div>
+      </div>
+      <ul class="rules-list">
+        <li class="reveal">
+          <span class="rule-num">I</span>
+          <div class="rule-content">
+            <h4>楽しむことを忘れるな</h4>
+            <p>本気で戦う中でも、ゲームそのものを楽しむことを忘れてはならない。笑えない勝利に意味はない。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="rule-num">II</span>
+          <div class="rule-content">
+            <h4>仲間をリスペクトせよ</h4>
+            <p>クラン内外を問わず、対戦相手もチームメイトも同じ情熱を持つゲーマーだ。リスペクトは戦いの基本だ。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="rule-num">III</span>
+          <div class="rule-content">
+            <h4>言い訳をするな</h4>
+            <p>回線のせい、ラグのせい、運のせい——どんな状況でも言い訳は不要だ。自分の実力を磨くことだけに集中しろ。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="rule-num">IV</span>
+          <div class="rule-content">
+            <h4>次の戦いに備えよ</h4>
+            <p>勝っても負けても、次の戦いは必ずある。分析して、練習して、より強い血便として戻ってこい。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="rule-num">V</span>
+          <div class="rule-content">
+            <h4>血便の名に恥じるな</h4>
+            <p>お前が戦う時、お前の背中には「血便」の名前がある。その名前の重みを常に意識してプレイしろ。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <div class="final-cta">
+    <div style="position:relative;z-index:1;">
+      <p style="font-family:var(--font-mono);font-size:12px;letter-spacing:6px;color:var(--crimson2);margin-bottom:24px;">// ARE YOU READY?</p>
+      <h2 style="font-family:var(--font-display);font-size:clamp(48px,8vw,100px);letter-spacing:4px;line-height:1;margin-bottom:32px;">
+        お前も<span style="color:var(--blood)">血便</span>を<br>流してみろ
+      </h2>
+      <a href="contact.html" class="btn btn-primary">JOIN THE CLAN →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>血</span>便</div>
+          <p>血便が出るくらい頑張る、総合ゲーミングクラン。2019年設立、メンバー15人弱。</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Top</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2019-2025 血便 Gaming Clan. All Rights Reserved.</p>
+        <p class="footer-slogan">「血便が出るくらい頑張る」</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT | 血便 Gaming Clan</title>
+  <meta name="description" content="血便ゲーミングクランへのお問い合わせ。加入希望・コラボ・メディア掲載などはこちら。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .form-notice {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: rgba(139,0,0,0.6);
+      padding: 10px 16px;
+      border: 1px solid rgba(139,0,0,0.15);
+      margin-bottom: 32px;
+    }
+
+    .contact-section-title {
+      font-family: var(--font-en);
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: var(--crimson2);
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(139,0,0,0.2);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    .form-submit-area {
+      text-align: right;
+    }
+
+    .form-check {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .form-check input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      accent-color: var(--crimson2);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .form-check label {
+      font-size: 13px;
+      color: var(--gray);
+      cursor: pointer;
+      line-height: 1.6;
+    }
+
+    .form-check label a { color: var(--crimson2); text-decoration: underline; }
+
+    .faq-list { margin-top: 60px; }
+    .faq-item {
+      border-bottom: 1px solid rgba(139,0,0,0.1);
+      padding: 20px 0;
+    }
+    .faq-q {
+      font-family: var(--font-en);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--white);
+      margin-bottom: 8px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .faq-q::before {
+      content: 'Q.';
+      color: var(--blood);
+      font-family: var(--font-display);
+      font-size: 20px;
+      min-width: 28px;
+    }
+    .faq-a {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.8;
+      padding-left: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-loader">
+    <div class="loader-text"><span>血</span>便</div>
+    <div class="loader-bar"></div>
+  </div>
+  <div class="scan-lines"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-blood">血</span>便
+    </a>
+    <button class="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="members.html">MEMBERS</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="philosophy.html">PHILOSOPHY</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="news.html">NEWS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <span class="page-hero-label">// GET IN TOUCH</span>
+    <h1 class="page-hero-title glitch" data-text="CONTACT">CONTACT</h1>
+    <p class="page-hero-desc">加入希望・コラボ依頼・メディア取材など、お気軽にご連絡を。必ず確認する。</p>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="reveal-left">
+          <h3>REACH OUT</h3>
+          <p>フォームからのお問い合わせが最も早く対応できる。SNSからのDMも歓迎するが、公式フォームが確実だ。</p>
+
+          <div class="contact-links">
+            <div class="contact-link">
+              <span class="contact-link-icon">𝕏</span>
+              <div>
+                <div style="font-size:13px;color:var(--white);margin-bottom:2px;">Twitter / X</div>
+                <div style="font-size:12px;color:var(--gray);">@ktbn_gaming</div>
+              </div>
+            </div>
+            <div class="contact-link">
+              <span class="contact-link-icon">▶</span>
+              <div>
+                <div style="font-size:13px;color:var(--white);margin-bottom:2px;">YouTube</div>
+                <div style="font-size:12px;color:var(--gray);">血便 Gaming Channel</div>
+              </div>
+            </div>
+            <div class="contact-link">
+              <span class="contact-link-icon">🟣</span>
+              <div>
+                <div style="font-size:13px;color:var(--white);margin-bottom:2px;">Twitch</div>
+                <div style="font-size:12px;color:var(--gray);">ktbn_gaming</div>
+              </div>
+            </div>
+            <div class="contact-link">
+              <span class="contact-link-icon">✉</span>
+              <div>
+                <div style="font-size:13px;color:var(--white);margin-bottom:2px;">Email</div>
+                <div style="font-size:12px;color:var(--gray);">contact@ktbn-gaming.jp</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <div class="faq-list" style="margin-top:48px;">
+            <h3>FAQ</h3>
+            <br>
+            <div class="faq-item">
+              <div class="faq-q">加入条件はありますか？</div>
+              <p class="faq-a">特定のゲームや実力は問いません。ゲームへの情熱と「血便が出るくらい頑張る」マインドがあれば歓迎します。</p>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">返信にどのくらいかかりますか？</div>
+              <p class="faq-a">通常3〜5営業日以内に返信します。お急ぎの場合はSNSのDMをご利用ください。</p>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">コラボや大会参加の依頼は？</div>
+              <p class="faq-a">お問い合わせフォームの種別で「コラボ・大会依頼」をお選びの上、詳細をご記入ください。積極的に検討します。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal-right">
+          <p class="form-notice">⚠ このフォームはデモ表示です。送信機能は実装されていません。</p>
+
+          <form onsubmit="return false;">
+            <p class="contact-section-title">// CONTACT FORM</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">NAME *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="血便 太郎" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="gamertag">GAMERTAG</label>
+                <input type="text" id="gamertag" name="gamertag" class="form-input" placeholder="RedShadow">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">EMAIL *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="type">お問い合わせ種別 *</label>
+              <select id="type" name="type" class="form-select" required>
+                <option value="" disabled selected>選択してください</option>
+                <option value="join">クラン加入希望</option>
+                <option value="collab">コラボ・大会依頼</option>
+                <option value="media">メディア取材</option>
+                <option value="goods">グッズについて</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="games">よくプレイするゲーム</label>
+              <input type="text" id="games" name="games" class="form-input" placeholder="例：VALORANT, Apex Legends">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">メッセージ *</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="お問い合わせ内容をご記入ください。クラン加入希望の場合は自己紹介・プレイ歴・志望動機などをご記入いただけると審査がスムーズです。" required></textarea>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">
+                <a href="#">プライバシーポリシー</a>に同意する
+              </label>
+            </div>
+
+            <div class="form-submit-area">
+              <button type="submit" class="btn btn-primary">SEND MESSAGE →</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>血</span>便</div>
+          <p>血便が出るくらい頑張る、総合ゲーミングクラン。2019年設立、メンバー15人弱。</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Top</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2019-2025 血便 Gaming Clan. All Rights Reserved.</p>
+        <p class="footer-slogan">「血便が出るくらい頑張る」</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

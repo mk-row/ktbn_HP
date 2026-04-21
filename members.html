@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEMBERS | 血便 Gaming Clan</title>
+  <meta name="description" content="血便ゲーミングクランのメンバー一覧。14名の精鋭ゲーマーたちを紹介。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-loader">
+    <div class="loader-text"><span>血</span>便</div>
+    <div class="loader-bar"></div>
+  </div>
+  <div class="scan-lines"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-blood">血</span>便
+    </a>
+    <button class="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="members.html">MEMBERS</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="philosophy.html">PHILOSOPHY</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="news.html">NEWS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <span class="page-hero-label">// THE CREW</span>
+    <h1 class="page-hero-title glitch" data-text="MEMBERS">MEMBERS</h1>
+    <p class="page-hero-desc">血便を構成する14名の精鋭たち。それぞれが異なる戦場で血便を流し続ける。</p>
+  </div>
+
+  <!-- Members Section -->
+  <section class="section">
+    <div class="section-inner">
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" id="game-filters">
+        <button class="filter-tab active" data-filter="all">ALL</button>
+        <button class="filter-tab" data-filter="VALORANT">VALORANT</button>
+        <button class="filter-tab" data-filter="Apex">APEX</button>
+        <button class="filter-tab" data-filter="League">LoL</button>
+        <button class="filter-tab" data-filter="原神">原神</button>
+        <button class="filter-tab" data-filter="格闘">格闘ゲーム</button>
+        <button class="filter-tab" data-filter="ソウル">ソウルライク</button>
+      </div>
+
+      <div class="members-grid" id="all-members"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>血</span>便</div>
+          <p>血便が出るくらい頑張る、総合ゲーミングクラン。2019年設立、メンバー15人弱。</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Top</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2019-2025 血便 Gaming Clan. All Rights Reserved.</p>
+        <p class="footer-slogan">「血便が出るくらい頑張る」</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    loadMembers('all-members').then(() => {
+      // Add game data attribute to cards for filtering
+      const cards = document.querySelectorAll('.member-card');
+      cards.forEach((card, i) => {
+        // We'll re-fetch for filter data
+      });
+
+      // Filter by game tags
+      fetch('data/members.json').then(r => r.json()).then(members => {
+        const cards = document.querySelectorAll('.member-card');
+        cards.forEach((card, i) => {
+          if (members[i]) {
+            card.dataset.games = members[i].games.join(' ');
+          }
+        });
+        initFilterTabs('.filter-tab', '.member-card', 'games');
+      });
+    });
+  </script>
+</body>
+</html>

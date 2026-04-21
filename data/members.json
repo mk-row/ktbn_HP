@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "RedShadow",
+    "real_name": "たろう",
+    "role": "リーダー",
+    "avatar": "images/avatars/member1.jpg",
+    "games": ["Apex Legends", "VALORANT", "原神"],
+    "bio": "クランの創設者。血便が出るくらい頑張ることをモットーに、仲間と共にゲームの頂点を目指す。FPS全般が得意で特にAimが凄まじい。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "",
+      "twitch": ""
+    },
+    "join_year": 2019
+  },
+  {
+    "id": 2,
+    "name": "DarkBlade",
+    "real_name": "じろう",
+    "role": "副リーダー",
+    "avatar": "images/avatars/member2.jpg",
+    "games": ["VALORANT", "League of Legends", "Overwatch 2"],
+    "bio": "副リーダーとして縁の下の力持ち。戦略立案が得意で、チームの頭脳として活躍。LoLのランクはダイヤ。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "https://youtube.com/",
+      "twitch": ""
+    },
+    "join_year": 2019
+  },
+  {
+    "id": 3,
+    "name": "CrimsonFang",
+    "real_name": "さぶろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member3.jpg",
+    "games": ["Apex Legends", "Fortnite", "PUBG"],
+    "bio": "バトロワゲームの鬼。ドン勝経験多数。高所からの狙撃で敵を屠る。普段は温厚だがゲーム中は豹変する。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "",
+      "twitch": "https://twitch.tv/"
+    },
+    "join_year": 2020
+  },
+  {
+    "id": 4,
+    "name": "VoidStrike",
+    "real_name": "しろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member4.jpg",
+    "games": ["VALORANT", "CS2", "Rainbow Six Siege"],
+    "bio": "タクティカルシューターの申し子。マップ知識と情報収集が武器。チームのIGLとして指示を飛ばし続ける。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "",
+      "twitch": ""
+    },
+    "join_year": 2020
+  },
+  {
+    "id": 5,
+    "name": "BloodMoon",
+    "real_name": "ごろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member5.jpg",
+    "games": ["原神", "FF14", "モンスターハンター"],
+    "bio": "RPG・MMO担当。原神ではほぼ全キャラを育成済み。ゆったりとした性格でクランのムードメーカー的存在。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "https://youtube.com/",
+      "twitch": ""
+    },
+    "join_year": 2020
+  },
+  {
+    "id": 6,
+    "name": "NightRaven",
+    "real_name": "ろくろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member6.jpg",
+    "games": ["Apex Legends", "Fortnite", "マインクラフト"],
+    "bio": "建築からFPSまで何でもこなすオールラウンダー。Minecraftの建築センスはクラン随一。深夜専門のゲーマー。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "",
+      "twitch": "https://twitch.tv/"
+    },
+    "join_year": 2021
+  },
+  {
+    "id": 7,
+    "name": "IronClaw",
+    "real_name": "しちろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member7.jpg",
+    "games": ["鉄拳8", "ストリートファイター6", "グラブルVS"],
+    "bio": "格闘ゲーム担当。鉄拳8では全国大会出場経験あり。インファイトスタイルで相手を圧倒する。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "https://youtube.com/",
+      "twitch": ""
+    },
+    "join_year": 2021
+  },
+  {
+    "id": 8,
+    "name": "ScarletWolf",
+    "real_name": "はちろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member8.jpg",
+    "games": ["VALORANT", "Apex Legends", "Splatoon 3"],
+    "bio": "クランの最年少メンバー。若い感性と抜群の反射神経でベテランを驚かせる。スプラトゥーンではXマッチ達成。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "",
+      "twitch": ""
+    },
+    "join_year": 2022
+  },
+  {
+    "id": 9,
+    "name": "PhantomEdge",
+    "real_name": "くろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member9.jpg",
+    "games": ["League of Legends", "DOTA2", "Teamfight Tactics"],
+    "bio": "MOBAゲームのスペシャリスト。マクロプレイと判断力が光る。LoLのランクはマスター。深夜のコーチング担当。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "https://youtube.com/",
+      "twitch": "https://twitch.tv/"
+    },
+    "join_year": 2021
+  },
+  {
+    "id": 10,
+    "name": "GhostByte",
+    "real_name": "じゅうろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member10.jpg",
+    "games": ["マインクラフト", "テラリア", "Stardew Valley"],
+    "bio": "クラフト系ゲーム愛好家。マイクラでの大規模建築はYouTubeで話題になったことも。癒し系のクランの良心。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "https://youtube.com/",
+      "twitch": ""
+    },
+    "join_year": 2022
+  },
+  {
+    "id": 11,
+    "name": "ToxicFlame",
+    "real_name": "じゅういちろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member11.jpg",
+    "games": ["Overwatch 2", "VALORANT", "Apex Legends"],
+    "bio": "ヒーローシューターのサポート担当。敵へのプレッシャーをかけながらもチームを支え続ける縁の下の力持ち。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "",
+      "twitch": ""
+    },
+    "join_year": 2022
+  },
+  {
+    "id": 12,
+    "name": "AbyssKnight",
+    "real_name": "じゅうにろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member12.jpg",
+    "games": ["エルデンリング", "ダークソウル3", "SEKIRO"],
+    "bio": "ソウルライクゲームの達人。死にゲーを死なずにクリアすることに命をかける。クランのメンタル最強男。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "https://youtube.com/",
+      "twitch": "https://twitch.tv/"
+    },
+    "join_year": 2023
+  },
+  {
+    "id": 13,
+    "name": "SerialKiller_G",
+    "real_name": "じゅうさんろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member13.jpg",
+    "games": ["Apex Legends", "PUBG", "CoD MW3"],
+    "bio": "スナイパー特化型プレイヤー。長距離狙撃の精度はクラン内ナンバーワン。試合では必ずハイライトを生み出す。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "",
+      "twitch": "https://twitch.tv/"
+    },
+    "join_year": 2023
+  },
+  {
+    "id": 14,
+    "name": "ChaosReaper",
+    "real_name": "じゅうしろう",
+    "role": "メンバー",
+    "avatar": "images/avatars/member14.jpg",
+    "games": ["VALORANT", "Rainbow Six Siege", "Escape from Tarkov"],
+    "bio": "ハードコアゲーム専門。EFTでは毎ラストでハイレアアイテムを引き当てる強運の持ち主。情報戦が得意。",
+    "sns": {
+      "twitter": "https://twitter.com/",
+      "youtube": "",
+      "twitch": ""
+    },
+    "join_year": 2023
+  }
+]

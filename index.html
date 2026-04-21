@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>血便 | GAMING CLAN</title>
+  <meta name="description" content="血便が出るくらい頑張るゲーミングクラン「血便」公式サイト。設立2019年、メンバー15人弱の総合ゲーミングクラン。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="page-loader">
+    <div class="loader-text"><span>血</span>便</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Scan lines overlay -->
+  <div class="scan-lines"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-blood">血</span>便
+    </a>
+    <button class="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="members.html">MEMBERS</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="philosophy.html">PHILOSOPHY</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="news.html">NEWS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">// GAMING CLAN — EST. 2019</p>
+      <h1 class="hero-title glitch" data-text="血便">
+        <span class="blood-text">血便</span>
+      </h1>
+      <p class="hero-subtitle">KETSUBEN GAMING CLAN</p>
+      <p class="hero-slogan">「血便が出るくらい頑張る」</p>
+      <div class="hero-btns">
+        <a href="members.html" class="btn btn-primary">MEET THE CREW</a>
+        <a href="philosophy.html" class="btn btn-outline">OUR PHILOSOPHY</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="section" style="padding: 0;">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number" data-count="5" data-suffix="+">0+</div>
+        <div class="stat-label">Years Active</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="14" data-suffix="">0</div>
+        <div class="stat-label">Members</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="10" data-suffix="+">0+</div>
+        <div class="stat-label">Titles Played</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="7" data-suffix="">0</div>
+        <div class="stat-label">Tournament Wins</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <span class="section-label">// ABOUT US</span>
+          <h2>俺たちは<br><span style="color:var(--blood)">限界まで</span><br>戦い続ける</h2>
+          <p>2019年の設立以来、ジャンルを問わずあらゆるゲームに全力で挑んできた。FPS、MOBA、バトロワ、格闘、RPG——ゲームの種類は関係ない。どんな戦場でも「血便が出るくらい」本気で臨む。それが血便のスタイルだ。</p>
+          <p>メンバー15人弱、それぞれが異なる得意ジャンルを持ち、互いに刺激し合いながら成長し続けている。大会での勝利はもちろん、ゲームそのものを愛し楽しむことを大切にしている。</p>
+          <a href="philosophy.html" class="btn btn-outline" style="margin-top:24px">READ MORE →</a>
+        </div>
+        <div class="about-visual reveal-right">
+          <div class="clan-emblem">🩸</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Members -->
+  <section class="section" style="background: rgba(139,0,0,0.03);">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">// THE CREW</span>
+        <h2 class="section-title glitch" data-text="MEMBERS">MEMBERS</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">それぞれが異なる強みを持つ戦士たち。多様なゲームジャンルで血便の名を轟かせる。</p>
+      </div>
+      <div class="members-grid" id="featured-members"></div>
+      <div style="text-align:center; margin-top:48px;">
+        <a href="members.html" class="btn btn-outline">ALL MEMBERS →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent News -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">// LATEST</span>
+        <h2 class="section-title">NEWS</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="news-list" id="featured-news"></div>
+      <div style="text-align:center; margin-top:48px;">
+        <a href="news.html" class="btn btn-outline">ALL NEWS →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section" style="padding: 80px 0;">
+    <div class="section-inner" style="text-align:center;">
+      <div class="reveal" style="border: 1px solid rgba(139,0,0,0.3); padding: 64px 40px; background: rgba(139,0,0,0.05); position:relative; overflow:hidden;">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center, rgba(139,0,0,0.15) 0%, transparent 70%);pointer-events:none;"></div>
+        <span class="section-label" style="position:relative;z-index:1;">// JOIN US</span>
+        <h2 style="font-family:var(--font-display);font-size:clamp(40px,6vw,80px);letter-spacing:4px;margin:16px 0;position:relative;z-index:1;">
+          共に<span style="color:var(--blood)">血便</span>を流せ
+        </h2>
+        <p style="color:var(--gray);max-width:500px;margin:0 auto 32px;position:relative;z-index:1;line-height:1.8;">
+          血便では新メンバーを随時募集中。ゲームが好きで、本気で頑張れる仲間なら誰でも歓迎する。
+        </p>
+        <a href="contact.html" class="btn btn-primary" style="position:relative;z-index:1;">JOIN NOW →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>血</span>便</div>
+          <p>血便が出るくらい頑張る、総合ゲーミングクラン。2019年設立、メンバー15人弱。あらゆるゲームで頂点を目指す。</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Top</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2019-2025 血便 Gaming Clan. All Rights Reserved.</p>
+        <p class="footer-slogan">「血便が出るくらい頑張る」</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    loadMembers('featured-members', 6);
+    loadNews('featured-news', 4);
+  </script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP | 血便 Gaming Clan</title>
+  <meta name="description" content="血便ゲーミングクラン公式グッズショップ。パーカー・Tシャツ・マウスパッドなど。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .shop-hero-banner {
+      background: linear-gradient(135deg, rgba(139,0,0,0.3), rgba(10,10,10,0.9));
+      border: 1px solid rgba(139,0,0,0.3);
+      padding: 40px;
+      margin-bottom: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .shop-hero-banner h2 {
+      font-family: var(--font-display);
+      font-size: 36px;
+      letter-spacing: 3px;
+    }
+    .shop-hero-banner p {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 8px;
+    }
+    .shop-hero-banner .btn { white-space: nowrap; }
+
+    .shop-notice {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: rgba(139,0,0,0.6);
+      text-align: center;
+      padding: 12px;
+      border: 1px solid rgba(139,0,0,0.15);
+      margin-bottom: 40px;
+    }
+
+    .shop-card-inner {
+      position: relative;
+    }
+
+    .sold-out-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 28px;
+      letter-spacing: 4px;
+      color: var(--gray);
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-loader">
+    <div class="loader-text"><span>血</span>便</div>
+    <div class="loader-bar"></div>
+  </div>
+  <div class="scan-lines"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-blood">血</span>便
+    </a>
+    <button class="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="members.html">MEMBERS</a></li>
+      <li><a href="history.html">HISTORY</a></li>
+      <li><a href="philosophy.html">PHILOSOPHY</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="news.html">NEWS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <span class="page-hero-label">// OFFICIAL GOODS</span>
+    <h1 class="page-hero-title glitch" data-text="SHOP">SHOP</h1>
+    <p class="page-hero-desc">血便の魂を纏え。全アイテムが血便メンバーによって厳選されたオフィシャルグッズ。</p>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+
+      <!-- Hero Banner -->
+      <div class="shop-hero-banner reveal">
+        <div>
+          <h2>WINTER COLLECTION <span style="color:var(--blood)">2024</span></h2>
+          <p>冬季コレクション、数量限定で発売中。在庫がなくなり次第終了。</p>
+        </div>
+        <a href="#" class="btn btn-primary">SHOP NOW →</a>
+      </div>
+
+      <!-- Notice -->
+      <div class="shop-notice">
+        ⚠ このページはデモ表示です。購入機能は実装されていません。
+      </div>
+
+      <!-- Filter -->
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">ALL</button>
+        <button class="filter-tab" data-filter="apparel">APPAREL</button>
+        <button class="filter-tab" data-filter="accessories">ACCESSORIES</button>
+        <button class="filter-tab" data-filter="limited">LIMITED</button>
+      </div>
+
+      <!-- Shop Grid -->
+      <div class="shop-grid">
+
+        <!-- Item 1 -->
+        <div class="shop-card reveal" data-category="apparel limited">
+          <div class="shop-img">
+            <span class="shop-badge">NEW</span>
+            🧥
+          </div>
+          <div class="shop-info">
+            <div class="shop-name">BLOOD HOODIE</div>
+            <p class="shop-desc">ヘビーウェイト裏起毛パーカー。胸に血便エンブレム、背面に大きくクランロゴを刺繍。カラー：黒/ダークレッド。</p>
+            <div class="shop-footer">
+              <div class="shop-price">¥8,800 <span>/枚</span></div>
+              <a href="#" class="btn btn-primary" style="padding:8px 20px;font-size:12px;">詳細</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="shop-card reveal" data-category="apparel">
+          <div class="shop-img">🎽</div>
+          <div class="shop-info">
+            <div class="shop-name">CLAN T-SHIRT</div>
+            <p class="shop-desc">速乾素材クランTシャツ。シンプルながら存在感抜群のデザイン。ゲームプレイ中も快適な着心地。XS〜XXL対応。</p>
+            <div class="shop-footer">
+              <div class="shop-price">¥4,500 <span>/枚</span></div>
+              <a href="#" class="btn btn-primary" style="padding:8px 20px;font-size:12px;">詳細</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="shop-card reveal" data-category="accessories">
+          <div class="shop-img">
+            <span class="shop-badge">人気</span>
+            🖱️
+          </div>
+          <div class="shop-info">
+            <div class="shop-name">GAMING MOUSEPAD XL</div>
+            <p class="shop-desc">900×400mmの特大サイズマウスパッド。血便デザインを全面にプリント。低摩擦表面で精密なAimをサポート。</p>
+            <div class="shop-footer">
+              <div class="shop-price">¥3,800 <span>/枚</span></div>
+              <a href="#" class="btn btn-primary" style="padding:8px 20px;font-size:12px;">詳細</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="shop-card reveal" data-category="accessories limited">
+          <div class="shop-img">
+            <span class="shop-badge">LIMITED</span>
+            🎮
+          </div>
+          <div class="shop-info">
+            <div class="shop-name">5TH ANNIVERSARY SET</div>
+            <p class="shop-desc">設立5周年記念限定セット。パーカー＋マウスパッド＋ステッカーシートのスペシャルボックス。限定50セット。</p>
+            <div class="shop-footer">
+              <div class="shop-price">¥15,000 <span>/セット</span></div>
+              <a href="#" class="btn btn-primary" style="padding:8px 20px;font-size:12px;">詳細</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 (Sold Out) -->
+        <div class="shop-card reveal" data-category="accessories">
+          <div class="shop-card-inner">
+            <div class="shop-img">🧢</div>
+            <div class="sold-out-overlay">SOLD OUT</div>
+          </div>
+          <div class="shop-info">
+            <div class="shop-name">BLOOD CAP</div>
+            <p class="shop-desc">ストラップバックキャップ。深紅の刺繍エンブレム入り。フリーサイズ対応。人気につき現在在庫切れ。</p>
+            <div class="shop-footer">
+              <div class="shop-price" style="color:var(--gray)">¥4,200 <span>/個</span></div>
+              <a href="#" class="btn btn-outline" style="padding:8px 20px;font-size:12px;opacity:0.5;">再入荷待ち</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="shop-card reveal" data-category="accessories">
+          <div class="shop-img">📱</div>
+          <div class="shop-info">
+            <div class="shop-name">STICKER PACK</div>
+            <p class="shop-desc">血便オリジナルステッカー10枚セット。PC・スマホ・ヘッドセットに貼ってクランをアピール。防水素材使用。</p>
+            <div class="shop-footer">
+              <div class="shop-price">¥1,200 <span>/セット</span></div>
+              <a href="#" class="btn btn-primary" style="padding:8px 20px;font-size:12px;">詳細</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="shop-card reveal" data-category="apparel">
+          <div class="shop-img">
+            <span class="shop-badge">NEW</span>
+            🧤
+          </div>
+          <div class="shop-info">
+            <div class="shop-name">GAMING GLOVES</div>
+            <p class="shop-desc">指先カット型ゲーミンググローブ。汗を素早く吸収・拡散し、長時間のゲームプレイをサポート。血便ロゴ入り。</p>
+            <div class="shop-footer">
+              <div class="shop-price">¥2,800 <span>/双</span></div>
+              <a href="#" class="btn btn-primary" style="padding:8px 20px;font-size:12px;">詳細</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="shop-card reveal" data-category="accessories limited">
+          <div class="shop-img">
+            <span class="shop-badge">LIMITED</span>
+            🖼️
+          </div>
+          <div class="shop-info">
+            <div class="shop-name">WALL ART POSTER A2</div>
+            <p class="shop-desc">A2サイズ高品質ポスター。クランアートワークを大迫力で部屋に飾ろう。アート紙使用、額装なし。限定100枚。</p>
+            <div class="shop-footer">
+              <div class="shop-price">¥2,200 <span>/枚</span></div>
+              <a href="#" class="btn btn-primary" style="padding:8px 20px;font-size:12px;">詳細</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>血</span>便</div>
+          <p>血便が出るくらい頑張る、総合ゲーミングクラン。2019年設立、メンバー15人弱。</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Top</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2019-2025 血便 Gaming Clan. All Rights Reserved.</p>
+        <p class="footer-slogan">「血便が出るくらい頑張る」</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    initFilterTabs('.filter-tab', '.shop-card', 'category');
+  </script>
+</body>
+</html>

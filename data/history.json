@@ -1,0 +1,130 @@
+[
+  {
+    "year": 2019,
+    "month": 4,
+    "title": "クラン「血便」設立",
+    "description": "RedShadowとDarkBladeの2人が「血便が出るくらい頑張る」という信念のもとクランを設立。最初は4人からスタート。",
+    "type": "milestone",
+    "icon": "🩸"
+  },
+  {
+    "year": 2019,
+    "month": 8,
+    "title": "第1回クラン内大会開催",
+    "description": "Apex Legendsにて初のクラン内トーナメントを開催。参加者8名、優勝はCrimsonFang。伝説の始まり。",
+    "type": "event",
+    "icon": "🏆"
+  },
+  {
+    "year": 2019,
+    "month": 12,
+    "title": "メンバー10人突破",
+    "description": "クラン設立から8ヶ月でメンバーが10人を突破。活動の幅が広がり、複数ゲームでのチーム編成が可能に。",
+    "type": "milestone",
+    "icon": "👥"
+  },
+  {
+    "year": 2020,
+    "month": 3,
+    "title": "VALORANT部門設立",
+    "description": "VALORANTのリリースに合わせてVALORANT専門チームを発足。VoidStrikeをIGLに任命し、本格的な活動開始。",
+    "type": "achievement",
+    "icon": "⚡"
+  },
+  {
+    "year": 2020,
+    "month": 7,
+    "title": "草の根大会 ベスト8",
+    "description": "初の公式外部大会参加。64チーム参加のVALORANT大会でベスト8を達成。クランの名が外部に知れ渡る。",
+    "type": "achievement",
+    "icon": "🎯"
+  },
+  {
+    "year": 2020,
+    "month": 11,
+    "title": "Apex部門 オンライン大会3位",
+    "description": "Apex Legends部門が初のオンライン大会で3位入賞。RedShadowがMVP受賞。トロフィーの代わりに血便の画像を掲げる。",
+    "type": "achievement",
+    "icon": "🥉"
+  },
+  {
+    "year": 2021,
+    "month": 2,
+    "title": "公式Twitter開設",
+    "description": "クランの活動を広く発信するためのSNSアカウントを開設。初投稿から3日でフォロワー100人を突破。",
+    "type": "milestone",
+    "icon": "📣"
+  },
+  {
+    "year": 2021,
+    "month": 6,
+    "title": "格闘ゲーム部門設立",
+    "description": "IronClawの加入を機に格闘ゲーム部門を新設。鉄拳・スト6を中心に活動開始。部門内でのランク競争が激化。",
+    "type": "milestone",
+    "icon": "👊"
+  },
+  {
+    "year": 2021,
+    "month": 9,
+    "title": "IronClaw 全国大会出場",
+    "description": "鉄拳8全国大会に血便代表として出場。本戦ベスト16という成績を残し、クランの実力を全国に証明。",
+    "type": "achievement",
+    "icon": "⚔️"
+  },
+  {
+    "year": 2022,
+    "month": 1,
+    "title": "YouTubeチャンネル開設",
+    "description": "クランの活動をより多くの人に伝えるためYouTubeチャンネルを開設。ゲームプレイ動画・クラン紹介動画を配信開始。",
+    "type": "milestone",
+    "icon": "🎬"
+  },
+  {
+    "year": 2022,
+    "month": 5,
+    "title": "VALORANT大会 準優勝",
+    "description": "128チーム参加のVALORANT公式外部大会で準優勝。決勝戦は惜しくも敗れたが、クランの実力を世に知らしめた。",
+    "type": "achievement",
+    "icon": "🥈"
+  },
+  {
+    "year": 2022,
+    "month": 10,
+    "title": "メンバー15人達成",
+    "description": "クラン設立から3年半、ついにメンバーが15人に到達。多様なゲームジャンルをカバーする総合ゲーミングクランへと成長。",
+    "type": "milestone",
+    "icon": "🎊"
+  },
+  {
+    "year": 2023,
+    "month": 3,
+    "title": "公式ウェブサイト公開",
+    "description": "クランの公式ウェブサイトをオープン。メンバー情報・活動実績・グッズ販売など、総合的な情報発信基地が完成。",
+    "type": "milestone",
+    "icon": "🌐"
+  },
+  {
+    "year": 2023,
+    "month": 7,
+    "title": "Apex 大会 優勝",
+    "description": "念願の大会優勝！64チーム参加のApex Legends大会でついに頂点へ。「血便が出るくらい頑張った」結果がここに。",
+    "type": "achievement",
+    "icon": "🏆"
+  },
+  {
+    "year": 2024,
+    "month": 2,
+    "title": "ソウルライク部門設立",
+    "description": "AbyssKnightを中心にソウルライクゲーム攻略チームを結成。エルデンリング最速攻略チャレンジで話題に。",
+    "type": "milestone",
+    "icon": "💀"
+  },
+  {
+    "year": 2024,
+    "month": 8,
+    "title": "クラン設立5周年記念イベント",
+    "description": "設立5周年を記念してオンライン大規模イベントを開催。全ジャンル合同の血便杯を実施、外部参加者も多数集まる。",
+    "type": "event",
+    "icon": "🎉"
+  }
+]
