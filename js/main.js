@@ -101,10 +101,12 @@ window.addEventListener('load', () => {
 })();
 
 /* ---- Navigation ---- */
-(function initNav() {
+function initNav() {
   const navbar = document.querySelector('.navbar');
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
+
+  if (!navbar || !hamburger || !navMenu) return;
 
   // Active link
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
@@ -117,28 +119,41 @@ window.addEventListener('load', () => {
 
   // Scroll effect
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navbar.style.borderBottomColor = 'rgba(200, 0, 0, 0.5)';
-    } else {
-      navbar.style.borderBottomColor = 'rgba(139, 0, 0, 0.4)';
-    }
+    navbar.style.borderBottomColor = window.scrollY > 50
+      ? 'rgba(200, 0, 0, 0.5)'
+      : 'rgba(139, 0, 0, 0.4)';
   });
 
-  // Mobile menu
-  if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      navMenu.classList.toggle('open');
-    });
-
-    navMenu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navMenu.classList.remove('open');
-      });
-    });
+  // Mobile menu — use both click and touchend for maximum mobile compatibility
+  function toggleMenu(e) {
+    e.stopPropagation();
+    const isOpen = hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
   }
-})();
+
+  hamburger.addEventListener('click', toggleMenu);
+
+  // Close when a nav link is tapped
+  navMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Close when tapping outside the menu
+  document.addEventListener('click', (e) => {
+    if (!navbar.contains(e.target)) {
+      hamburger.classList.remove('open');
+      navMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initNav);
 
 /* ---- Scroll Reveal ---- */
 (function initScrollReveal() {
