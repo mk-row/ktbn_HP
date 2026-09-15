@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity=".6"/>
+    </filter>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff2a3d"/>
+      <stop offset="1" stop-color="#a0000f"/>
+    </linearGradient>
+  </defs>
+  <!-- long banner sticker -->
+  <g transform="rotate(-12 400 250)" filter="url(#ds)">
+    <rect x="150" y="200" width="520" height="104" rx="14" fill="#f2f2f2"/>
+    <rect x="160" y="210" width="500" height="84" rx="8" fill="#0b0b0c"/>
+    <rect x="160" y="210" width="84" height="84" rx="8" fill="#e0001b"/>
+    <path d="M202 226 L222 258 A24 24 0 1 1 182 258 Z" fill="#0b0b0c"/>
+    <text x="264" y="268" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="38" letter-spacing="4" fill="#f2f2f2">BLEED OR GO HOME</text>
+  </g>
+  <!-- drop sticker -->
+  <g transform="rotate(10 250 500)" filter="url(#ds)">
+    <path d="M250 330 L328 460 A92 92 0 1 1 172 460 Z" fill="#f2f2f2"/>
+    <path d="M250 352 L314 462 A76 76 0 1 1 186 462 Z" fill="url(#red)"/>
+    <text x="250" y="548" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="64" fill="#0b0b0c">血</text>
+  </g>
+  <!-- square kanji sticker -->
+  <g transform="rotate(-6 545 520)" filter="url(#ds)">
+    <rect x="430" y="400" width="232" height="232" rx="18" fill="#f2f2f2"/>
+    <rect x="442" y="412" width="208" height="208" rx="10" fill="#e0001b"/>
+    <text x="546" y="552" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="96" fill="#0b0b0c" letter-spacing="-6">血便</text>
+    <text x="546" y="596" text-anchor="middle" font-family="'Courier New',monospace" font-weight="700" font-size="14" letter-spacing="4" fill="#0b0b0c">EST.2019</text>
+  </g>
+  <!-- round badge -->
+  <g transform="rotate(14 640 250)" filter="url(#ds)">
+    <circle cx="660" cy="330" r="78" fill="#f2f2f2"/>
+    <circle cx="660" cy="330" r="66" fill="#0b0b0c"/>
+    <circle cx="660" cy="330" r="54" fill="none" stroke="#e0001b" stroke-width="3" stroke-dasharray="4 6"/>
+    <text x="660" y="344" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="38" letter-spacing="2" fill="#f2f2f2">KTBN</text>
+  </g>
+  <!-- small GG -->
+  <g transform="rotate(-18 200 680)" filter="url(#ds)">
+    <rect x="120" y="640" width="160" height="72" rx="36" fill="#f2f2f2"/>
+    <rect x="130" y="650" width="140" height="52" rx="26" fill="#0b0b0c"/>
+    <text x="200" y="688" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="30" letter-spacing="3" fill="#e0001b">GG WP</text>
+  </g>
+</svg>

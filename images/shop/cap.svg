@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="crown" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#28282a"/>
+      <stop offset=".55" stop-color="#121213"/>
+      <stop offset="1" stop-color="#070707"/>
+    </linearGradient>
+    <linearGradient id="brim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1c1e"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <radialGradient id="sh" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#000" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff2a3d"/>
+      <stop offset="1" stop-color="#a0000f"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="420" cy="590" rx="320" ry="36" fill="url(#sh)"/>
+  <path d="M190 480 C180 300 290 210 420 210 C560 210 640 310 630 480 Z" fill="url(#crown)" stroke="#2e2e31" stroke-width="2"/>
+  <path d="M420 212 C360 260 330 360 336 482 M420 212 C480 260 520 360 528 482 M420 212 C300 250 230 350 214 480" fill="none" stroke="#2a2a2c" stroke-width="3"/>
+  <path d="M420 212 C360 260 330 360 336 482 M420 212 C480 260 520 360 528 482" fill="none" stroke="#000" stroke-opacity=".5" stroke-width="1" stroke-dasharray="4 5" transform="translate(6 0)"/>
+  <ellipse cx="420" cy="214" rx="20" ry="9" fill="#1e1e20" stroke="#333" stroke-width="2"/>
+  <!-- eyelets -->
+  <circle cx="300" cy="330" r="6" fill="#050505" stroke="#333" stroke-width="2"/>
+  <circle cx="560" cy="330" r="6" fill="#050505" stroke="#333" stroke-width="2"/>
+  <!-- brim -->
+  <path d="M190 480 C300 510 540 512 630 480 C690 488 752 512 770 540 C730 580 560 585 430 566 C320 552 220 522 190 480 Z" fill="url(#brim)" stroke="#2e2e31" stroke-width="2"/>
+  <path d="M225 500 C320 525 540 528 640 496 C690 506 735 522 752 540" fill="none" stroke="#e0001b" stroke-width="2" stroke-dasharray="8 6" stroke-opacity=".7"/>
+  <!-- embroidered emblem -->
+  <path d="M432 300 L466 356 A40 40 0 1 1 398 356 Z" fill="url(#red)" stroke="#5a0008" stroke-width="3"/>
+  <text x="432" y="386" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="32" fill="#0b0b0c">血</text>
+  <text x="432" y="450" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="22" letter-spacing="6" fill="#d8d8d8">KTBN</text>
+  <path d="M300 250 C260 300 240 380 236 470" stroke="#fff" stroke-opacity=".05" stroke-width="30" fill="none"/>
+</svg>

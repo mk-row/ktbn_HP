@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="14" dy="20" stdDeviation="16" flood-color="#000" flood-opacity=".7"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a0205"/>
+      <stop offset=".55" stop-color="#080808"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff2236"/>
+      <stop offset="1" stop-color="#7a000b"/>
+    </linearGradient>
+    <clipPath id="art"><rect x="226" y="112" width="348" height="492"/></clipPath>
+  </defs>
+  <g transform="rotate(-4 400 360)" filter="url(#ds)">
+    <rect x="210" y="96" width="380" height="524" fill="#ecebe8"/>
+    <rect x="226" y="112" width="348" height="492" fill="url(#bg)"/>
+    <g clip-path="url(#art)">
+      <circle cx="400" cy="330" r="190" fill="#e0001b" fill-opacity=".12"/>
+      <path d="M160 520 L640 120" stroke="#e0001b" stroke-opacity=".2" stroke-width="30"/>
+      <text x="400" y="430" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="300" fill="url(#red)">血</text>
+      <path d="M318 420 v90 a8 8 0 0 0 16 0 v-90 Z M380 430 v130 a8 8 0 0 0 16 0 v-130 Z M452 424 v60 a8 8 0 0 0 16 0 v-60 Z" fill="#b0000e"/>
+      <text x="250" y="150" font-family="'Courier New',monospace" font-size="13" letter-spacing="3" fill="#8a8a8a">NO. 001 / 100</text>
+      <text x="550" y="150" text-anchor="end" font-family="'Courier New',monospace" font-size="13" letter-spacing="3" fill="#8a8a8a">EST. 2019</text>
+      <text x="400" y="560" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="36" letter-spacing="4" fill="#f2f2f2">BLOODY STORM</text>
+      <text x="400" y="586" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" letter-spacing="5" fill="#e0001b">BLEED OR GO HOME</text>
+      <path d="M240 126 h20 M240 126 v20 M560 126 h-20 M560 126 v20" stroke="#e0001b" stroke-width="2"/>
+    </g>
+  </g>
+  <path d="M396 88 L404 88 L408 112 L392 112 Z" fill="#9a9a9a"/>
+</svg>

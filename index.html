@@ -2,194 +2,185 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>血便 | GAMING CLAN</title>
-  <meta name="description" content="血便が出るくらい頑張るゲーミングクラン「血便」公式サイト。設立2019年、メンバー15人弱の総合ゲーミングクラン。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#070707">
+  <title>血便 | BLOODY STORM GAMING OFFICIAL</title>
+  <meta name="description" content="血便が出るくらい頑張るプロゲーミングチーム「血便」公式サイト。設立2019年、メンバー14名。">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+  <div class="loader" aria-hidden="true"><div class="loader__panel loader__panel--top"></div><div class="loader__panel loader__panel--bottom"></div></div>
 
-  <!-- Loader -->
-  <div class="page-loader">
-    <div class="loader-text"><span>血</span>便</div>
-    <div class="loader-bar"></div>
-  </div>
-
-  <!-- Scan lines overlay -->
-  <div class="scan-lines"></div>
-
-  <!-- Particle canvas -->
-  <canvas id="particle-canvas"></canvas>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <a href="index.html" class="nav-logo">
-      <span class="logo-blood">血</span>便
-    </a>
-    <button class="hamburger" aria-label="メニュー">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-menu">
-      <li><a href="index.html">TOP</a></li>
-      <li><a href="members.html">MEMBERS</a></li>
-      <li><a href="history.html">HISTORY</a></li>
-      <li><a href="philosophy.html">PHILOSOPHY</a></li>
-      <li><a href="shop.html">SHOP</a></li>
-      <li><a href="news.html">NEWS</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">// GAMING CLAN — EST. 2019</p>
-      <h1 class="hero-title glitch" data-text="血便">
-        <span class="blood-text">血便</span>
-      </h1>
-      <p class="hero-subtitle">KETSUBEN GAMING CLAN</p>
-      <p class="hero-slogan">「血便が出るくらい頑張る」</p>
-      <div class="hero-btns">
-        <a href="members.html" class="btn btn-primary">MEET THE CREW</a>
-        <a href="philosophy.html" class="btn btn-outline">OUR PHILOSOPHY</a>
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <div class="hero__lines"></div>
+        <span class="hero__slash" style="--t:30%;--h:1px;--o:.5;--sd:.3s"></span>
+        <span class="hero__slash" style="--t:62%;--h:3px;--o:.8;--sd:.45s"></span>
+        <span class="hero__slash" style="--t:70%;--h:1px;--o:.35;--sd:.6s"></span>
+        <div class="hero__ghost" style="font-family:var(--font-display);letter-spacing:0">KTBN</div>
       </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>SCROLL</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
 
-  <!-- Stats -->
-  <div class="section" style="padding: 0;">
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-number" data-count="5" data-suffix="+">0+</div>
-        <div class="stat-label">Years Active</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" data-count="14" data-suffix="">0</div>
-        <div class="stat-label">Members</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" data-count="10" data-suffix="+">0+</div>
-        <div class="stat-label">Titles Played</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" data-count="7" data-suffix="">0</div>
-        <div class="stat-label">Tournament Wins</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- About -->
-  <section class="section">
-    <div class="section-inner">
-      <div class="about-grid">
-        <div class="about-text reveal-left">
-          <span class="section-label">// ABOUT US</span>
-          <h2>俺たちは<br><span style="color:var(--blood)">限界まで</span><br>戦い続ける</h2>
-          <p>2019年の設立以来、ジャンルを問わずあらゆるゲームに全力で挑んできた。FPS、MOBA、バトロワ、格闘、RPG——ゲームの種類は関係ない。どんな戦場でも「血便が出るくらい」本気で臨む。それが血便のスタイルだ。</p>
-          <p>メンバー15人弱、それぞれが異なる得意ジャンルを持ち、互いに刺激し合いながら成長し続けている。大会での勝利はもちろん、ゲームそのものを愛し楽しむことを大切にしている。</p>
-          <a href="philosophy.html" class="btn btn-outline" style="margin-top:24px">READ MORE →</a>
+      <div class="hero__inner">
+        <p class="hero__eyebrow" data-hero style="--hd:.1">EST. 2019 — PRO GAMING TEAM</p>
+        <h1 class="hero__title glitch" data-split data-text="血便">血便<span class="hero__drips" aria-hidden="true"><i style="--l:18%;--len:.14em;--dd:1.4s;--dur:2.6s"></i><i style="--l:40%;--len:.26em;--w:.022em;--dd:1.7s;--dur:3.4s"></i><i style="--l:63%;--len:.09em;--w:.016em;--dd:2s;--dur:2.2s"></i><i style="--l:82%;--len:.19em;--dd:1.55s;--dur:3s"></i></span></h1>
+        <p class="hero__en" data-hero style="--hd:.55"><span data-scramble>BLOODY STORM GAMING</span></p>
+        <p class="hero__slogan" data-hero style="--hd:.7"><span><span class="nb">血便が出るくらい</span><span class="nb">頑張る</span></span></p>
+        <div class="hero__actions" data-hero style="--hd:.85">
+          <a href="members.html" class="btn">MEET THE CREW</a>
+          <a href="philosophy.html" class="btn btn--ghost">OUR PHILOSOPHY</a>
         </div>
-        <div class="about-visual reveal-right">
-          <div class="clan-emblem">🩸</div>
+      </div>
+
+      <p class="hero__side" aria-hidden="true">BLEED OR GO HOME</p>
+      <p class="hero__side hero__side--r" aria-hidden="true">BLOODY STORM — 2019</p>
+
+      <div class="hero__hud" data-hero style="--hd:1.1">
+        <div class="scroll-cue"><span class="scroll-cue__bar"></span>SCROLL</div>
+        <span class="hud-meta">SEASON 2025 / JP</span>
+      </div>
+    </section>
+
+    <!-- ============ BANDS ============ -->
+    <div class="bands" aria-hidden="true">
+      <div class="band band--line">
+        <div class="marquee marquee--reverse" style="--speed:48s">
+          <div class="marquee__track">
+            <span class="marquee__item">BLOODY STORM GAMING <svg viewBox="0 0 40 50"><path d="M20 1 L36.5 27.5 A18.5 18.5 0 1 1 3.5 27.5 Z"/></svg></span>
+            <span class="marquee__item">EST. 2019 <svg viewBox="0 0 40 50"><path d="M20 1 L36.5 27.5 A18.5 18.5 0 1 1 3.5 27.5 Z"/></svg></span>
+          </div>
+        </div>
+      </div>
+      <div class="band band--red">
+        <div class="marquee" style="--speed:34s">
+          <div class="marquee__track">
+            <span class="marquee__item">BLEED OR GO HOME <svg viewBox="0 0 40 50"><path d="M20 1 L36.5 27.5 A18.5 18.5 0 1 1 3.5 27.5 Z"/></svg></span>
+            <span class="marquee__item">血便が出るくらい頑張る <svg viewBox="0 0 40 50"><path d="M20 1 L36.5 27.5 A18.5 18.5 0 1 1 3.5 27.5 Z"/></svg></span>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Featured Members -->
-  <section class="section" style="background: rgba(139,0,0,0.03);">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-label">// THE CREW</span>
-        <h2 class="section-title glitch" data-text="MEMBERS">MEMBERS</h2>
-        <div class="section-divider"></div>
-        <p class="section-desc">それぞれが異なる強みを持つ戦士たち。多様なゲームジャンルで血便の名を轟かせる。</p>
-      </div>
-      <div class="members-grid" id="featured-members"></div>
-      <div style="text-align:center; margin-top:48px;">
-        <a href="members.html" class="btn btn-outline">ALL MEMBERS →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Recent News -->
-  <section class="section">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-label">// LATEST</span>
-        <h2 class="section-title">NEWS</h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="news-list" id="featured-news"></div>
-      <div style="text-align:center; margin-top:48px;">
-        <a href="news.html" class="btn btn-outline">ALL NEWS →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Banner -->
-  <section class="section" style="padding: 80px 0;">
-    <div class="section-inner" style="text-align:center;">
-      <div class="reveal" style="border: 1px solid rgba(139,0,0,0.3); padding: 64px 40px; background: rgba(139,0,0,0.05); position:relative; overflow:hidden;">
-        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center, rgba(139,0,0,0.15) 0%, transparent 70%);pointer-events:none;"></div>
-        <span class="section-label" style="position:relative;z-index:1;">// JOIN US</span>
-        <h2 style="font-family:var(--font-display);font-size:clamp(40px,6vw,80px);letter-spacing:4px;margin:16px 0;position:relative;z-index:1;">
-          共に<span style="color:var(--blood)">血便</span>を流せ
-        </h2>
-        <p style="color:var(--gray);max-width:500px;margin:0 auto 32px;position:relative;z-index:1;line-height:1.8;">
-          血便では新メンバーを随時募集中。ゲームが好きで、本気で頑張れる仲間なら誰でも歓迎する。
-        </p>
-        <a href="contact.html" class="btn btn-primary" style="position:relative;z-index:1;">JOIN NOW →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-logo"><span>血</span>便</div>
-          <p>血便が出るくらい頑張る、総合ゲーミングクラン。2019年設立、メンバー15人弱。あらゆるゲームで頂点を目指す。</p>
-        </div>
-        <div class="footer-nav">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Top</a></li>
-            <li><a href="members.html">Members</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="philosophy.html">Philosophy</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-nav">
-          <h4>Social</h4>
-          <ul>
-            <li><a href="#">Twitter / X</a></li>
-            <li><a href="#">YouTube</a></li>
-            <li><a href="#">Twitch</a></li>
-          </ul>
+    <!-- ============ STATS ============ -->
+    <section class="section" style="padding-block: clamp(40px, 6vw, 80px)">
+      <div class="container">
+        <div class="stats" data-stagger=".12">
+          <div class="stat"><p class="stat__num" data-count="5"><span class="count">0</span><sup>+</sup></p><p class="stat__label">YEARS ACTIVE</p></div>
+          <div class="stat"><p class="stat__num" data-count="14"><span class="count">0</span></p><p class="stat__label">PLAYERS</p></div>
+          <div class="stat"><p class="stat__num" data-count="10"><span class="count">0</span><sup>+</sup></p><p class="stat__label">TITLES PLAYED</p></div>
+          <div class="stat"><p class="stat__num" data-count="7"><span class="count">0</span></p><p class="stat__label">TOURNAMENT WINS</p></div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-copy">© 2019-2025 血便 Gaming Clan. All Rights Reserved.</p>
-        <p class="footer-slogan">「血便が出るくらい頑張る」</p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--flush-top">
+      <div class="container about">
+        <div class="about__text">
+          <p class="sec-head__index" data-reveal="fade"><b>01</b> — ABOUT US</p>
+          <h2 class="about__title" data-reveal="mask">
+            <span class="nb">俺たちは</span><br><span class="nb red">限界まで</span><br><span class="nb">戦い続ける。</span>
+          </h2>
+          <p data-reveal="up">2019年の設立以来、ジャンルを問わずあらゆるゲームに全力で挑んできた。FPS、MOBA、バトロワ、格闘、RPG——ゲームの種類は関係ない。どんな戦場でも「血便が出るくらい」本気で臨む。それが血便のスタイルだ。</p>
+          <p data-reveal="up">メンバーはそれぞれ異なる得意ジャンルを持ち、互いに刺激し合いながら成長し続けている。大会での勝利はもちろん、ゲームそのものを愛し楽しむことを大切にしている。</p>
+          <dl class="about__facts" data-reveal="up">
+            <div><dt>FOUNDED</dt><dd>2019</dd></div>
+            <div><dt>PLAYERS</dt><dd>14</dd></div>
+            <div><dt>GENRE</dt><dd>ALL</dd></div>
+          </dl>
+          <a href="philosophy.html" class="btn btn--ghost" data-reveal="up">READ MORE</a>
+        </div>
+
+        <div class="about__visual" data-reveal="scale">
+          <div class="emblem" aria-hidden="true">
+            <span class="emblem__tick"></span><span class="emblem__tick"></span><span class="emblem__tick"></span><span class="emblem__tick"></span>
+            <svg class="emblem__ring" viewBox="0 0 400 400">
+              <defs><path id="ring-o" d="M200 200 m-178 0 a178 178 0 1 1 356 0 a178 178 0 1 1 -356 0"/></defs>
+              <circle cx="200" cy="200" r="196"/>
+              <text><textPath href="#ring-o" textLength="1100" lengthAdjust="spacing">BLEED OR GO HOME ✦ BLOODY STORM ✦ EST. 2019 ✦ BLOODY STORM GAMING ✦</textPath></text>
+            </svg>
+            <svg class="emblem__ring emblem__ring--inner" viewBox="0 0 400 400">
+              <circle cx="200" cy="200" r="196" stroke-dasharray="2 10"/>
+            </svg>
+            <svg class="emblem__core" viewBox="0 0 40 50">
+              <path d="M20 1 L36.5 27.5 A18.5 18.5 0 1 1 3.5 27.5 Z"/>
+              <text x="20" y="38" text-anchor="middle" font-size="14">血</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MEMBERS ============ -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-head__ghost" aria-hidden="true">PLAYERS</span>
+          <div>
+            <p class="sec-head__index" data-reveal="fade"><b>02</b> — THE CREW</p>
+            <h2 class="sec-head__title" data-split>MEMBERS</h2>
+            <p class="sec-head__jp" data-reveal="up"><span class="nb">異なる強みを持つ戦士たち。</span><span class="nb">カードを選んでプロフィールを見る。</span></p>
+          </div>
+          <a href="members.html" class="btn btn--ghost" data-reveal="up">ALL MEMBERS</a>
+        </div>
+      </div>
+      <div class="rail" id="member-rail"></div>
+      <div class="container">
+        <div class="rail-bar" id="member-rail-bar">
+          <div class="rail-bar__track"><span class="rail-bar__thumb"></span></div>
+          <div class="rail-bar__btns">
+            <button type="button" class="icon-btn" data-rail="-1" aria-label="前へ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button type="button" class="icon-btn" data-rail="1" aria-label="次へ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-head__ghost" aria-hidden="true">LATEST</span>
+          <div>
+            <p class="sec-head__index" data-reveal="fade"><b>03</b> — LATEST</p>
+            <h2 class="sec-head__title" data-split>NEWS</h2>
+          </div>
+          <a href="news.html" class="btn btn--ghost" data-reveal="up">ALL NEWS</a>
+        </div>
+        <div class="news" id="news-list"></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <div class="cta__bg" aria-hidden="true">
+        <div class="marquee" style="--speed:40s"><div class="marquee__track"><span class="marquee__item">JOIN THE CLAN</span></div></div>
+        <div class="marquee marquee--reverse" style="--speed:46s"><div class="marquee__track"><span class="marquee__item">BLEED OR GO HOME</span></div></div>
+        <div class="marquee" style="--speed:52s"><div class="marquee__track"><span class="marquee__item">BLOODY STORM GAMING</span></div></div>
+      </div>
+      <div class="container cta__inner">
+        <p class="cta__label" data-reveal="fade">// RECRUITING NOW</p>
+        <h2 class="cta__title" data-reveal="mask"><span class="nb">共に血便を</span><span class="nb">流せ。</span></h2>
+        <p class="cta__text" data-reveal="up"><span class="nb">血便では新メンバーを</span><span class="nb">随時募集中。</span><span class="nb">ゲームが好きで、</span><span class="nb">本気で頑張れる仲間なら</span><span class="nb">誰でも歓迎する。</span></p>
+        <a href="contact.html" class="btn btn--white" data-reveal="up">JOIN NOW</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/layout.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/render.js"></script>
   <script>
-    loadMembers('featured-members', 6);
-    loadNews('featured-news', 4);
+    KTBN.renderMemberRail(document.getElementById('member-rail'), document.getElementById('member-rail-bar'));
+    KTBN.renderNews(document.getElementById('news-list'), { limit: 4 });
   </script>
 </body>
 </html>

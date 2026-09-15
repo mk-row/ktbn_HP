@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="fab" x1="0" x2="1">
+      <stop offset="0" stop-color="#0d0d0e"/>
+      <stop offset=".5" stop-color="#232325"/>
+      <stop offset="1" stop-color="#0c0c0d"/>
+    </linearGradient>
+    <radialGradient id="sh" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#000" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff1f33"/>
+      <stop offset="1" stop-color="#9a000e"/>
+    </linearGradient>
+    <clipPath id="body"><path d="M255 330 L545 330 L545 650 L255 650 Z"/></clipPath>
+  </defs>
+  <ellipse cx="400" cy="680" rx="280" ry="30" fill="url(#sh)"/>
+  <path d="M250 200 L330 172 C352 204 448 204 470 172 L550 200 L662 292 L602 372 L545 336 L545 648 C545 656 539 662 531 662 L269 662 C261 662 255 656 255 648 L255 336 L198 372 L138 292 Z" fill="url(#fab)" stroke="#2c2c2f" stroke-width="2"/>
+  <path d="M330 172 C352 214 448 214 470 172" fill="none" stroke="#39393c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M338 180 C358 206 442 206 462 180 C446 192 354 192 338 180 Z" fill="#060606"/>
+  <path d="M198 372 L255 336 M602 372 L545 336" stroke="#2c2c2f" stroke-width="3"/>
+  <path d="M144 300 L204 380 M656 300 L596 380" stroke="#1c1c1e" stroke-width="10"/>
+  <!-- big print -->
+  <g clip-path="url(#body)">
+    <path d="M250 520 L560 400" stroke="#e0001b" stroke-opacity=".18" stroke-width="44"/>
+  </g>
+  <text x="400" y="440" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="132" fill="url(#red)" letter-spacing="-4">血便</text>
+  <path d="M322 446 v34 a6 6 0 0 0 12 0 v-34 Z M366 446 v58 a6 6 0 0 0 12 0 v-58 Z M452 446 v22 a6 6 0 0 0 12 0 v-22 Z" fill="#c4000f"/>
+  <text x="400" y="545" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="30" letter-spacing="6" fill="#f2f2f2">BLOODY STORM</text>
+  <text x="400" y="572" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="5" fill="#7d7d7d">GAMING // EST. 2019</text>
+  <path d="M390 205 V655" stroke="#fff" stroke-opacity=".03" stroke-width="50"/>
+</svg>

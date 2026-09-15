@@ -1,0 +1,95 @@
+[
+  {
+    "id": "blood-hoodie",
+    "name": "BLOOD HOODIE",
+    "category": ["apparel", "limited"],
+    "price": 8800,
+    "unit": "枚",
+    "image": "images/shop/hoodie.svg",
+    "badges": ["NEW", "LIMITED"],
+    "featured": true,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "description": "ヘビーウェイト裏起毛パーカー。胸に血便エンブレム、背面に大きくクランロゴを刺繍。カラー：黒/ダークレッド。",
+    "specs": { "素材": "コットン80% / ポリエステル20%", "重さ": "12.4oz ヘビーウェイト", "カラー": "BLACK / DARK RED" }
+  },
+  {
+    "id": "clan-tshirt",
+    "name": "CLAN T-SHIRT",
+    "category": ["apparel"],
+    "price": 4500,
+    "unit": "枚",
+    "image": "images/shop/tshirt.svg",
+    "badges": [],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "description": "速乾素材クランTシャツ。シンプルながら存在感抜群のデザイン。ゲームプレイ中も快適な着心地。XS〜XXL対応。",
+    "specs": { "素材": "ポリエステル100%（速乾）", "カラー": "BLACK" }
+  },
+  {
+    "id": "mousepad-xl",
+    "name": "GAMING MOUSEPAD XL",
+    "category": ["accessories"],
+    "price": 3800,
+    "unit": "枚",
+    "image": "images/shop/mousepad.svg",
+    "badges": ["人気"],
+    "description": "900×400mmの特大サイズマウスパッド。血便デザインを全面にプリント。低摩擦表面で精密なAimをサポート。",
+    "specs": { "サイズ": "900 × 400 × 4 mm", "表面": "コントロール系クロス", "縁": "ステッチ加工" }
+  },
+  {
+    "id": "anniversary-set",
+    "name": "5TH ANNIVERSARY SET",
+    "category": ["accessories", "limited"],
+    "price": 15000,
+    "unit": "セット",
+    "image": "images/shop/anniversary-set.svg",
+    "badges": ["LIMITED"],
+    "description": "設立5周年記念限定セット。パーカー＋マウスパッド＋ステッカーシートのスペシャルボックス。限定50セット。",
+    "specs": { "内容": "パーカー / マウスパッド / ステッカー", "数量": "限定50セット" }
+  },
+  {
+    "id": "blood-cap",
+    "name": "BLOOD CAP",
+    "category": ["accessories"],
+    "price": 4200,
+    "unit": "個",
+    "image": "images/shop/cap.svg",
+    "badges": [],
+    "soldOut": true,
+    "description": "ストラップバックキャップ。深紅の刺繍エンブレム入り。フリーサイズ対応。人気につき現在在庫切れ。",
+    "specs": { "サイズ": "フリー（56〜60cm）", "仕様": "ストラップバック / 3D刺繍" }
+  },
+  {
+    "id": "sticker-pack",
+    "name": "STICKER PACK",
+    "category": ["accessories"],
+    "price": 1200,
+    "unit": "セット",
+    "image": "images/shop/stickers.svg",
+    "badges": [],
+    "description": "血便オリジナルステッカー10枚セット。PC・スマホ・ヘッドセットに貼ってクランをアピール。防水素材使用。",
+    "specs": { "枚数": "10枚", "素材": "耐水 / 耐候PVC" }
+  },
+  {
+    "id": "gaming-gloves",
+    "name": "GAMING GLOVES",
+    "category": ["apparel"],
+    "price": 2800,
+    "unit": "双",
+    "image": "images/shop/gloves.svg",
+    "badges": ["NEW"],
+    "sizes": ["S", "M", "L"],
+    "description": "指先カット型ゲーミンググローブ。汗を素早く吸収・拡散し、長時間のゲームプレイをサポート。血便ロゴ入り。",
+    "specs": { "素材": "ナイロン / スパンデックス", "仕様": "フィンガーレス / 面ファスナー" }
+  },
+  {
+    "id": "poster-a2",
+    "name": "WALL ART POSTER A2",
+    "category": ["accessories", "limited"],
+    "price": 2200,
+    "unit": "枚",
+    "image": "images/shop/poster.svg",
+    "badges": ["LIMITED"],
+    "description": "A2サイズ高品質ポスター。クランアートワークを大迫力で部屋に飾ろう。アート紙使用、額装なし。限定100枚。",
+    "specs": { "サイズ": "A2（420 × 594 mm）", "数量": "限定100枚（シリアル入り）" }
+  }
+]
