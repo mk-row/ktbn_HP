@@ -450,7 +450,7 @@ main { position: relative; z-index: 1; }
 .modal.is-open .modal__panel { clip-path: inset(0 0 0 0); }
 .modal__media { position: relative; background: #000; aspect-ratio: 3 / 4; align-self: start; min-height: 0; overflow: hidden; }
 .modal__media > * { width: 100%; height: 100%; object-fit: cover; }
-.modal__body { position: relative; padding: clamp(28px, 4.4vw, 56px); overflow-y: auto; max-height: calc(100vh - 80px); }
+.modal__body { position: relative; display: flex; flex-direction: column; padding: clamp(28px, 4.4vw, 56px); overflow-y: auto; max-height: calc(100vh - 80px); }
 .modal__body > * { opacity: 0; transform: translateY(20px); transition: opacity .6s var(--ease), transform .8s var(--ease); }
 .modal.is-open .modal__body > * { opacity: 1; transform: none; transition-delay: calc(.35s + var(--i, 0) * .06s); }
 .modal__close { position: absolute; top: 14px; right: 14px; z-index: 5; --ib-bg: #0b0b0c; }
@@ -467,8 +467,8 @@ main { position: relative; z-index: 1; }
 .profile__label { font-family: var(--font-mono); font-size: 11px; letter-spacing: .24em; color: var(--muted); margin-bottom: 10px; }
 .profile__games { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; }
 .profile__bio { color: #d0d0d3; line-height: 1.95; margin-bottom: 28px; }
-.profile__sns { display: flex; flex-wrap: wrap; gap: 8px; }
-.profile__nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 11px; letter-spacing: .2em; color: var(--muted); }
+.profile__sns { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.profile__nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 11px; letter-spacing: .2em; color: var(--muted); }
 .profile__nav div { display: flex; gap: 8px; }
 
 /* 表示名の [] 部分は小さく組んで 1 行に収める */
