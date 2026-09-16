@@ -168,17 +168,31 @@ scenery, detailed background, cluttered background
 ### 1. Kuni — 精神的支柱・冷静・リーダー
 
 ```
-black hair, center parted hair, golden eyes, calm confident smile,
-goalkeeper gloves, holding kebab wrap,
-dark red bomber jacket, black cargo pants, dark wine red sneakers,
-captain armband, one hand on hip, confident standing pose,
+black hair, center parted hair, forehead partly visible, sharp golden eyes,
+smug confident grin, cocky smile, unshakable aura,
+dark crimson long coat, black inner shirt, black tapered pants, dark red sneakers,
+resting heavy machine gun on shoulder, belt fed LMG, oversized dark red machine gun,
+ammo belt hanging, dark red goalkeeper gloves hanging from belt,
+standing still, feet planted firmly, one foot resting on a soccer ball,
+looking at viewer, calm commanding presence, leader aura,
+full body with margin, space above head and below feet,
 deep crimson neon glow, wine red rim light,
 ```
 
-- **詳細設定が未確定**。CSV レベルの情報（リーダー・冷静・ケバブ・キーパーグローブ）で組んでいる
+- 他の 7 人が全員動いているポーズなので、**Kuni だけ動かない**ことで格を出す。
+  `standing still, feet planted firmly` は削らないこと
+- **LMG を肩に担ぐ**のが主役。「重い銃を軽々」で余裕とドヤ顔が両立する。
+  `ammo belt hanging` の垂れた弾帯が縦のラインを作り、チビ体型に情報量を足す
+- キーパー設定は**足元のボールと腰に下げたグローブ**で表現する。手を銃に専念させるため、
+  グローブは装備扱いに降格している
+- ロングコートは 8 人で Kuni だけ。黒背景でシルエットが伸びて大きく見える
 - 「血便カラー」は**ダークレッド／ワインレッド**として解釈。Shibao の鮮やかな赤と差別化するため
   彩度を落とした暗い赤で固定する
-- 腕章に文字が湧きやすい。出たらネガティブを `(letters:1.3)` に上げる
+- **`full body with margin, space above head and below feet` は Kuni 専用**。
+  リーダーはキャプテンカード枠（`aspect-ratio: 5/4` の横長）に入り、
+  3:4 に整えた画像がさらに上下トリミングされるため、余白を多めに取る必要がある
+- 腕章は廃止。文字が湧くうえ、肩に担いだ腕で隠れるため
+- ケバブも廃止。手が塞がって LMG と両立しないため（要素は 3 つまでが鉄則）
 
 ### 2. Cokemaru — 静かな精密狙撃手
 
@@ -260,14 +274,22 @@ black hair, swept back hair, forehead fully exposed,
 cross mark on forehead, narrow calm eyes, cold intellectual expression,
 black long coat, fur trimmed collar, fur trimmed cuffs, heavy coat,
 necklace, earrings, silver accessories,
-monochrome black outfit, achromatic,
-calm composed standing pose,
+holding open grimoire in one hand, glowing purple magic book, ancient tome,
+other hand raised, glowing purple runes floating around raised hand,
+purple light from the pages, calm composed standing pose,
 purple neon glow, magenta rim light,
 ```
 
 - 設定: 前髪を上げておでこを出し、**額の中央に十字架のマーク**。落ち着いた無彩色でまとめる
 - 額の十字が最重要の識別要素。出なければ `(cross mark on forehead:1.3)` に強める
 - 毛皮あしらいの重厚なコートは `fur trimmed collar` が効きやすい
+- **魔導書は片手持ち、もう片方の手を掲げてルーンを光らせる**。両手とも仕事をさせることで
+  「何もしていない感」を消す
+- 額の十字＋魔導書でエクソシスト寄りにまとまり、「知的で冷酷」と噛み合う
+- 8 人で唯一、**発光に光源の必然性がある**（本のページとルーンが光る）。
+  他の 7 人はリムライトだけなので、これ自体が差別化になる
+- `magic circle` は入れないこと。背景に巨大な魔法陣が湧いて `simple background` と衝突する。
+  `glowing runes` に留める
 - 無彩色の衣装なので、黒背景では**パープルの発光だけが識別の手がかり**になる。
   発光を弱くしすぎないこと
 

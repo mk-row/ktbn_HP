@@ -3,80 +3,143 @@
     "id": 1,
     "name": "Kuni[たかしま縺ﾖ堂ｶ]",
     "role": "リーダー",
-    "photo": "images/avatars/member1.png",
-    "games": ["モンスターストライク", "Apex Legends", "Rocket League"],
+    "photo": "images/avatars/kuni.png",
+    "games": [
+      "モンスターストライク",
+      "Apex Legends",
+      "Rocket League"
+    ],
     "bio": "KTBNの創設者であり精神的支柱。血便が出るくらい頑張ることをモットーに、どんな劣勢でも表情を変えない冷静さでチームをまとめ上げる。Rocket Leagueではキーパーを担当し、川島永嗣ばりのセーブでチームを救う。",
-    "sns": { "twitter": "", "youtube": "", "twitch": "" },
+    "sns": {
+      "twitter": "",
+      "youtube": "",
+      "twitch": ""
+    },
     "join_year": 2019
   },
   {
     "id": 2,
     "name": "cokemaru.",
     "role": "メンバー",
-    "photo": "images/avatars/member2.png",
-    "games": ["モンスターストライク", "Apex Legends", "Rocket League"],
+    "photo": "images/avatars/cokemaru.png",
+    "games": [
+      "モンスターストライク",
+      "Apex Legends",
+      "Rocket League"
+    ],
     "bio": "誰よりも先に仲間を褒める、チーム屈指の人格者。穏やかな物腰で場の空気を和らげながら、Apexでは冷静にダメージを積み上げる。",
-    "sns": { "twitter": "", "youtube": "", "twitch": "" },
+    "sns": {
+      "twitter": "",
+      "youtube": "",
+      "twitch": ""
+    },
     "join_year": 2019
   },
   {
     "id": 3,
     "name": "JJINN",
     "role": "メンバー",
-    "photo": "images/avatars/member3.png",
-    "games": ["ストリートファイター6", "Apex Legends", "Sword Art Online"],
+    "photo": "images/avatars/jjinn.png",
+    "games": [
+      "ストリートファイター6",
+      "Apex Legends",
+      "Sword Art Online"
+    ],
     "bio": "服も装備も黒で固める生粋の中二病。チームの切り込み隊長として誰よりも早く前に出る。二刀流への憧れは本物。",
-    "sns": { "twitter": "", "youtube": "", "twitch": "" },
+    "sns": {
+      "twitter": "",
+      "youtube": "",
+      "twitch": ""
+    },
     "join_year": 2019
   },
   {
     "id": 4,
     "name": "Kakizaki",
     "role": "メンバー",
-    "photo": "images/avatars/member4.png",
-    "games": ["Apex Legends", "Overwatch 2", "Rocket League"],
+    "photo": "images/avatars/kakizaki.png",
+    "games": [
+      "Apex Legends",
+      "Overwatch 2",
+      "Rocket League"
+    ],
     "bio": "やさしく穏やか、それでいてプレーは硬派。多くを語らず静かに仕事をこなす、チームの良心的な存在。",
-    "sns": { "twitter": "", "youtube": "", "twitch": "" },
+    "sns": {
+      "twitter": "",
+      "youtube": "",
+      "twitch": ""
+    },
     "join_year": 2019
   },
   {
     "id": 5,
     "name": "Nayamei",
     "role": "メンバー",
-    "photo": "images/avatars/member5.png",
-    "games": ["Apex Legends", "League of Legends", "Shadowverse"],
+    "photo": "images/avatars/nayamei.png",
+    "games": [
+      "Apex Legends",
+      "League of Legends",
+      "Shadowverse"
+    ],
     "bio": "何をやっても様になるチームきっての伊達男。派手なプレーで場を沸かせ、勝負どころで一気に流れを引き寄せる。",
-    "sns": { "twitter": "", "youtube": "", "twitch": "" },
+    "sns": {
+      "twitter": "",
+      "youtube": "",
+      "twitch": ""
+    },
     "join_year": 2019
   },
   {
     "id": 6,
     "name": "Reo",
     "role": "メンバー",
-    "photo": "images/avatars/member6.png",
-    "games": ["Apex Legends", "Palworld"],
+    "photo": "images/avatars/reo.png",
+    "games": [
+      "Apex Legends",
+      "Palworld"
+    ],
     "bio": "男が惚れる男。人情に厚く、仲間のためなら自分の戦績を捨ててでもカバーに入る。チーム一の熱量の持ち主。",
-    "sns": { "twitter": "", "youtube": "", "twitch": "" },
+    "sns": {
+      "twitter": "",
+      "youtube": "",
+      "twitch": ""
+    },
     "join_year": 2019
   },
   {
     "id": 7,
     "name": "Rowmine",
     "role": "メンバー",
-    "photo": "images/avatars/member7.png",
-    "games": ["Apex Legends", "Rainbow Six Siege", "Rocket League"],
+    "photo": "images/avatars/rowmine.png",
+    "games": [
+      "Apex Legends",
+      "Rainbow Six Siege",
+      "Rocket League"
+    ],
     "bio": "チームのムードメーカー。すかした態度とは裏腹に、スナイパーとしての精度は本物。",
-    "sns": { "twitter": "", "youtube": "", "twitch": "" },
+    "sns": {
+      "twitter": "",
+      "youtube": "",
+      "twitch": ""
+    },
     "join_year": 2019
   },
   {
     "id": 8,
     "name": "Shibao feat.借金的帝王",
     "role": "メンバー",
-    "photo": "images/avatars/member8.png",
-    "games": ["Apex Legends", "Shadowverse", "Rainbow Six Siege"],
+    "photo": "images/avatars/shibao.png",
+    "games": [
+      "Apex Legends",
+      "Shadowverse",
+      "Rainbow Six Siege"
+    ],
     "bio": "すぐキレるが、誰よりも本気。思い切りの良さでチームに流れを引き寄せる爆発力担当。",
-    "sns": { "twitter": "", "youtube": "", "twitch": "" },
+    "sns": {
+      "twitter": "",
+      "youtube": "",
+      "twitch": ""
+    },
     "join_year": 2019
   }
 ]

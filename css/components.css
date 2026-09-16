@@ -294,7 +294,7 @@ main { position: relative; z-index: 1; }
   background: var(--bg-3);
   clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, var(--cut) 100%, 0 calc(100% - var(--cut)));
 }
-.player__art { position: absolute; inset: 0; transition: transform 1.2s var(--ease), filter .8s; filter: grayscale(.35) contrast(1.05); }
+.player__art { position: absolute; inset: 0; transition: transform 1.2s var(--ease), filter .8s; filter: contrast(1.05); }
 .player__art svg, .player__art img { width: 100%; height: 100%; object-fit: cover; }
 .player__frame::before {
   content: ''; position: absolute; inset: 0; z-index: 2;
@@ -367,7 +367,7 @@ main { position: relative; z-index: 1; }
 .player::after { right: -6px; bottom: -6px; border-width: 0 2px 2px 0; transform: translate(-8px, -8px); }
 
 @media (hover: hover) {
-  .player:hover .player__art { transform: scale(1.08); filter: grayscale(0) contrast(1.1); }
+  .player:hover .player__art { transform: scale(1.08); filter: contrast(1.1); }
   .player:hover .player__frame::after { animation: scan 1.1s var(--ease-io); }
   .player:hover .player__no { color: var(--red); -webkit-text-stroke-color: var(--red); }
   .player:hover .player__games { max-height: 80px; opacity: 1; }
@@ -415,12 +415,12 @@ main { position: relative; z-index: 1; }
 
 /* Captains (members page) */
 .captains { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(12px, 1.8vw, 24px); margin-bottom: clamp(56px, 8vw, 96px); }
-.player--captain .player__frame { aspect-ratio: 5 / 4; }
+.player--captain .player__frame { aspect-ratio: 3 / 4; }
 .player--captain .player__name { font-size: clamp(40px, 11cqi, 96px); }
 .player--captain .player__bio { color: #c9c9cc; font-size: 13px; line-height: 1.8; max-width: 34em; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 @media (max-width: 760px) {
   .captains { grid-template-columns: 1fr; }
-  .player--captain .player__frame { aspect-ratio: 4 / 5; }
+  .player--captain .player__frame { aspect-ratio: 3 / 4; }
 }
 
 /* =============================================
