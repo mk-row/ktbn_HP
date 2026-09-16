@@ -9,7 +9,7 @@ window.KTBN = window.KTBN || {};
 
 (function () {
   const ICONS = {
-    drop: '<svg viewBox="0 0 40 50" aria-hidden="true"><path d="M20 1 L36.5 27.5 A18.5 18.5 0 1 1 3.5 27.5 Z"/></svg>',
+    drop: '<svg viewBox="0 0 40 55" aria-hidden="true"><path d="M20 1 L36.5 27.5 A18.5 18.5 0 1 1 3.5 27.5 Z"/><text x="20" y="41" text-anchor="middle" font-size="14" textLength="26" lengthAdjust="spacingAndGlyphs">KTBN</text></svg>',
     arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h16M13 5l7 7-7 7"/></svg>',
     chevL: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
     chevR: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>',
@@ -39,7 +39,6 @@ window.KTBN = window.KTBN || {};
   KTBN.pages = PAGES;
 
   const current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-  const pad = (n) => String(n).padStart(2, '0');
 
   const brand = `
     <a href="index.html" class="brand" aria-label="血便 トップへ">
@@ -53,9 +52,9 @@ window.KTBN = window.KTBN || {};
   nav.innerHTML = `
     ${brand}
     <nav class="nav__links" aria-label="メイン">
-      ${PAGES.slice(1).map((p, i) => `
+      ${PAGES.slice(1).map(p => `
         <a href="${p.href}" class="nav__link${p.href === current ? ' is-active' : ''}">
-          <small>${pad(i + 1)}</small><span class="roll"><span data-text="${p.label}">${p.label}</span></span>
+          <span class="roll"><span data-text="${p.label}">${p.label}</span></span>
         </a>`).join('')}
     </nav>
     <a href="contact.html" class="btn btn--sm nav__cta">JOIN US</a>
@@ -69,7 +68,7 @@ window.KTBN = window.KTBN || {};
   menu.innerHTML = `
     <ul class="menu__list">
       ${PAGES.map((p, i) => `
-        <li class="menu__item"><a href="${p.href}" class="menu__link${p.href === current ? ' is-active' : ''}" style="--i:${i}"><small>${pad(i)}</small>${p.label}</a></li>`).join('')}
+        <li class="menu__item"><a href="${p.href}" class="menu__link${p.href === current ? ' is-active' : ''}" style="--i:${i}">${p.label}</a></li>`).join('')}
     </ul>
     <div class="menu__foot">
       <span>BLEED OR GO HOME</span>
@@ -84,7 +83,6 @@ window.KTBN = window.KTBN || {};
       <div class="footer__top">
         <div class="footer__brand">
           ${brand}
-          <p class="footer__lead"><span class="nb">血便が出るくらい、</span><span class="nb">頑張る。</span></p>
           <a href="contact.html" class="btn btn--ghost">JOIN THE CLAN</a>
         </div>
         <div>
@@ -135,7 +133,7 @@ window.KTBN = window.KTBN || {};
     loader.insertAdjacentHTML('beforeend', `
       <div class="loader__line"></div>
       <div class="loader__center">
-        <svg class="loader__mark" viewBox="0 0 40 50"><path d="M20 1 L36.5 27.5 A18.5 18.5 0 1 1 3.5 27.5 Z"/></svg>
+        <svg class="loader__mark" viewBox="0 0 40 55"><path d="M20 1 L36.5 27.5 A18.5 18.5 0 1 1 3.5 27.5 Z"/></svg>
         <div class="loader__word">BLOODY STORM</div>
         <div class="loader__count">000</div>
       </div>`);

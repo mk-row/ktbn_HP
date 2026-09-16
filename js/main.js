@@ -326,8 +326,10 @@ window.KTBN = window.KTBN || {};
       });
     }
     if (footerWord) {
-      const r = footerWord.getBoundingClientRect();
-      const t = clamp((innerHeight - r.top) / (r.height + innerHeight * 0.25), 0, 1);
+      // Progress from the word entering the viewport to the page bottom, so it always reaches 100%
+      // regardless of window height / DPI rounding (scrollY can stop a fraction short of max on Windows)
+      const start = footerWord.getBoundingClientRect().top + y - innerHeight;
+      const t = max - y < 2 ? 1 : clamp((y - start) / Math.max(1, max - start), 0, 1);
       footerWord.style.setProperty('--fill', `${(t * 100).toFixed(1)}%`);
     }
     if (KTBN.onScroll) KTBN.onScroll.forEach(fn => fn(y));

@@ -195,7 +195,7 @@ main { position: relative; z-index: 1; }
 }
 .band--red .marquee__item { color: #0a0a0a; }
 .band--line .marquee__item { color: transparent; -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4); }
-.band .marquee__item svg { width: .55em; height: .7em; flex-shrink: 0; }
+.band .marquee__item svg { width: .55em; height: .76em; flex-shrink: 0; }
 .band--red .marquee__item svg path { fill: #0a0a0a; }
 .band--line .marquee__item svg path { fill: var(--red); }
 
@@ -251,12 +251,12 @@ main { position: relative; z-index: 1; }
 .emblem__ring circle { fill: none; stroke: var(--line-2); }
 .emblem__core {
   position: relative;
-  width: 42%; aspect-ratio: 4 / 5;
+  width: 42%; aspect-ratio: 8 / 11;
   filter: drop-shadow(0 0 40px rgba(224, 0, 27, 0.55));
   animation: float 6s ease-in-out infinite;
 }
 .emblem__core path { fill: var(--red); }
-.emblem__core text { font-family: var(--font-jp); font-weight: 900; fill: #0a0a0a; }
+.emblem__core text { font-family: var(--font-display); fill: #0a0a0a; }
 .emblem__tick { position: absolute; width: 18px; height: 18px; border: solid var(--red); }
 .emblem__tick:nth-of-type(1) { top: 0; left: 0; border-width: 2px 0 0 2px; }
 .emblem__tick:nth-of-type(2) { top: 0; right: 0; border-width: 2px 2px 0 0; }
@@ -645,8 +645,6 @@ main { position: relative; z-index: 1; }
 }
 .phero__row { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 40px; margin-top: clamp(24px, 3vw, 36px); }
 .phero__desc { max-width: 34em; color: #c9c9cc; font-size: clamp(14px, 1.5vw, 16px); }
-.phero__index { font-family: var(--font-mono); font-size: 12px; letter-spacing: .24em; color: var(--muted); white-space: nowrap; }
-.phero__index b { color: var(--red-hi); font-weight: 400; font-size: 20px; }
 .phero__rule { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--line-2); }
 .phero__rule::after { content: ''; position: absolute; inset: 0; background: var(--red); transform: scaleX(0); transform-origin: left; }
 .is-loaded .phero__rule::after { animation: rule 1.6s var(--ease-io) .5s forwards; }

@@ -169,7 +169,7 @@ p { text-wrap: pretty; }
   display: flex; flex-direction: column; align-items: center; gap: 18px;
   transition: opacity .35s, transform .6s var(--ease);
 }
-.loader__mark { width: 64px; height: 80px; }
+.loader__mark { width: 64px; height: 88px; }
 .loader__mark path {
   fill: transparent;
   stroke: var(--red-hi);
@@ -245,8 +245,9 @@ p { text-wrap: pretty; }
   position: relative; z-index: 2;
   white-space: nowrap;
 }
-.brand__mark { width: 26px; height: 32px; transition: transform .6s var(--ease); }
+.brand__mark { width: 32px; height: 44px; transition: transform .6s var(--ease); }
 .brand__mark path { fill: var(--red); }
+.brand__mark text { font-family: var(--font-display); fill: #0a0a0a; }
 .brand:hover .brand__mark { transform: rotate(-12deg) scale(1.08); }
 .brand__text { display: flex; flex-direction: column; line-height: 1; }
 .brand__jp { font-family: var(--font-jp); font-weight: 900; font-size: 20px; letter-spacing: .08em; }
@@ -265,7 +266,6 @@ p { text-wrap: pretty; }
   transition: color .3s;
   white-space: nowrap;
 }
-.nav__link small { font-family: var(--font-mono); font-size: 9px; color: var(--red); letter-spacing: 0; opacity: .8; }
 .nav__link .roll { display: inline-block; overflow: hidden; height: 1.2em; line-height: 1.2em; vertical-align: bottom; }
 .nav__link .roll > span { display: block; transition: transform .45s var(--ease); }
 .nav__link .roll > span::after { content: attr(data-text); display: block; color: var(--text); }
@@ -332,7 +332,6 @@ p { text-wrap: pretty; }
   transform: translateY(105%);
   transition: transform .8s var(--ease), color .3s;
 }
-.menu__link small { font-family: var(--font-mono); font-size: 12px; color: var(--red); }
 .menu__link.is-active, .menu__link:active { color: var(--red-hi); }
 .menu.is-open .menu__link { transform: translateY(0); transition-delay: calc(.25s + var(--i) * .05s); }
 .menu__foot {
@@ -585,7 +584,7 @@ p { text-wrap: pretty; }
   gap: 48px;
   padding-bottom: 56px;
 }
-.footer__lead { font-family: var(--font-jp); font-weight: 900; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.5; margin: 18px 0 28px; }
+.footer__brand .btn { margin-top: 28px; }
 .footer__head { font-family: var(--font-mono); font-size: 11px; letter-spacing: .3em; color: var(--red); margin-bottom: 18px; }
 .footer__nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
 .footer__nav a, .footer__sns a {
