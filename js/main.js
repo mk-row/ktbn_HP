@@ -537,7 +537,7 @@ window.KTBN = window.KTBN || {};
     return modal;
   }
   KTBN.modal = {
-    open({ media, body, label, onClose, onKey }) {
+    open({ media, body, label, onClose, onKey, dir = 0 }) {
       const m = ensureModal();
       const wasOpen = m.classList.contains('is-open');
       m.querySelector('.modal__media').innerHTML = media;
@@ -556,9 +556,16 @@ window.KTBN = window.KTBN || {};
         requestAnimationFrame(() => m.classList.add('is-open'));
         setTimeout(() => m.querySelector('.modal__close').focus({ preventScroll: true }), 50);
       } else {
-        b.classList.remove('is-swap');
-        [...b.children].forEach(c => { c.style.transition = 'none'; c.style.opacity = '0'; c.style.transform = 'translateY(20px)'; });
-        requestAnimationFrame(() => [...b.children].forEach(c => { c.style.transition = ''; c.style.opacity = ''; c.style.transform = ''; }));
+        const panel = m.querySelector('.modal__panel');
+        panel.removeAttribute('data-swap');
+        // 一度リセットしてから付け直さないと、連打時にアニメーションが再生されない
+        void panel.offsetWidth;
+        panel.setAttribute('data-swap', dir < 0 ? 'prev' : 'next');
+        panel.addEventListener('animationend', function done(e) {
+          if (e.target !== panel.querySelector('.modal__media')) return;
+          panel.removeAttribute('data-swap');
+          panel.removeEventListener('animationend', done);
+        });
       }
       return m;
     },

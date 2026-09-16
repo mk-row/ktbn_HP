@@ -32,6 +32,13 @@ window.KTBN = window.KTBN || {};
   ];
   const genresOf = (m) => GENRES.filter(g => m.games.some(game => g.games.includes(game))).map(g => g.key);
 
+  // "Kuni[たかしま…]" のように [] が続く表示名は、[] 以降を小さく組んで 1 行に収める
+  function nameHTML(name) {
+    const i = name.indexOf('[');
+    if (i <= 0) return esc(name);
+    return `${esc(name.slice(0, i))}<span class="name__sub">${esc(name.slice(i))}</span>`;
+  }
+
   function hash(str) {
     let h = 2166136261;
     for (const ch of str) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619); }
@@ -101,7 +108,7 @@ window.KTBN = window.KTBN || {};
           <span class="player__role${lead ? ' is-lead' : ''}">${esc(role)}</span>
           <div class="player__info">
             <p class="player__year">SINCE ${esc(m.join_year)}</p>
-            <h3 class="player__name">${esc(m.name)}</h3>
+            <h3 class="player__name">${nameHTML(m.name)}</h3>
             ${captain ? `<p class="player__bio">${esc(m.bio)}</p>` : ''}
             <div class="player__games">${m.games.map(g => `<span class="chip">${esc(g)}</span>`).join('')}</div>
             <span class="player__view"><i></i>VIEW PROFILE</span>
@@ -119,6 +126,7 @@ window.KTBN = window.KTBN || {};
   function openProfile(members, index, order) {
     const list = order || members.map((_, i) => i);
     let pos = list.indexOf(index);
+    let dir = 0;
     const show = () => {
       const i = list[pos];
       const m = members[i];
@@ -128,11 +136,12 @@ window.KTBN = window.KTBN || {};
         m.sns.twitch && `<a class="btn btn--sm btn--ghost" href="${esc(m.sns.twitch)}" target="_blank" rel="noopener">TWITCH</a>`
       ].filter(Boolean).join('');
       const modal = KTBN.modal.open({
+        dir,
         label: `${m.name} プロフィール`,
         media: `<div class="player__art" style="filter:none">${portrait(m, `m${i}`)}</div>`,
         body: `
           <p class="profile__kicker">No.${pad(i + 1)} — ${esc(ROLE_EN[m.role] || m.role)}</p>
-          <h2 class="profile__name">${esc(m.name)}</h2>
+          <h2 class="profile__name">${nameHTML(m.name)}</h2>
           <dl class="profile__meta">
             <div><dt>ROLE</dt><dd>${esc(m.role)}</dd></div>
             <div><dt>JOINED</dt><dd>${esc(m.join_year)}</dd></div>
@@ -157,7 +166,7 @@ window.KTBN = window.KTBN || {};
       tryPhoto(modal.querySelector('.modal__media .player__art'), m);
       modal.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => step(+b.dataset.step)));
     };
-    const step = (d) => { pos = (pos + d + list.length) % list.length; show(); };
+    const step = (d) => { dir = d; pos = (pos + d + list.length) % list.length; show(); };
     show();
   }
 
