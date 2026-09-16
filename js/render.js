@@ -117,6 +117,16 @@ window.KTBN = window.KTBN || {};
       </button>`;
   }
 
+  // Keep roster numbers written in the markup in sync with members.json
+  function syncMemberCount(n) {
+    document.querySelectorAll('[data-member-count]').forEach(el => {
+      if (!('count' in el.dataset)) { el.textContent = n; return; }
+      el.dataset.count = n;
+      if (el.dataset.counted) (el.querySelector('.count') || el).textContent = n;
+    });
+    document.querySelectorAll('[data-member-next]').forEach(el => { el.textContent = n + 1; });
+  }
+
   function hydratePhotos(scope, members) {
     scope.querySelectorAll('.player[data-member]').forEach(card => {
       tryPhoto(card.querySelector('.player__art'), members[+card.dataset.member]);
@@ -175,6 +185,7 @@ window.KTBN = window.KTBN || {};
     if (!railEl) return;
     try {
       const members = await getJSON('data/members.json');
+      syncMemberCount(members.length);
       railEl.innerHTML = members.map((m, i) => `<div data-reveal="up" style="--d:${Math.min(i, 5) * 0.08}s">${playerCard(m, i)}</div>`).join('');
       hydratePhotos(railEl, members);
       railEl.addEventListener('click', (e) => {
@@ -217,6 +228,7 @@ window.KTBN = window.KTBN || {};
   KTBN.renderMembersPage = async function ({ captainsEl, gridEl, tabsEl, countEl }) {
     try {
       const members = await getJSON('data/members.json');
+      syncMemberCount(members.length);
       const idx = members.map((_, i) => i);
       const captainIdx = idx.filter(i => members[i].role !== 'メンバー');
       const restIdx = idx.filter(i => members[i].role === 'メンバー');

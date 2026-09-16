@@ -82,10 +82,10 @@
    PHILOSOPHY
    ============================================= */
 .creed { position: relative; text-align: center; padding-block: clamp(80px, 12vw, 160px); }
-.creed__label { font-family: var(--font-mono); font-size: 12px; letter-spacing: .32em; color: var(--muted); margin-bottom: 28px; }
+.creed .container { container-type: inline-size; }
 .creed__text {
+  --fit-max: 150px;
   font-family: var(--font-jp); font-weight: 900;
-  font-size: clamp(44px, 10vw, 150px);
   line-height: 1.12;
   letter-spacing: -.04em;
 }

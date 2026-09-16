@@ -408,9 +408,11 @@ main { position: relative; z-index: 1; }
 .rail-bar__btns { display: flex; gap: 8px; }
 
 /* Grid (members page) */
-.player-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px, 1.8vw, 24px); }
-@media (max-width: 1100px) { .player-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 760px) { .player-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } .player { --cut: 12px; } }
+/* Flex so a short last row is centred instead of leaving empty slots (roster size varies) */
+.player-grid { --cols: 4; --gap: clamp(12px, 1.8vw, 24px); display: flex; flex-wrap: wrap; justify-content: center; gap: var(--gap); }
+.player-grid > * { width: calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols)); }
+@media (max-width: 1100px) { .player-grid { --cols: 3; } }
+@media (max-width: 760px) { .player-grid { --cols: 2; --gap: 10px; } .player { --cut: 12px; } }
 .player.is-filtered-out { display: none; }
 
 /* Captains (members page) */
@@ -422,6 +424,9 @@ main { position: relative; z-index: 1; }
   .captains { grid-template-columns: 1fr; }
   .player--captain .player__frame { aspect-ratio: 3 / 4; }
 }
+/* A single captain keeps the portrait card, centred instead of leaving the right column empty */
+.captains > :only-child { grid-column: 1 / -1; justify-self: center; width: 50%; }
+@media (max-width: 760px) { .captains > :only-child { width: 100%; } }
 
 /* =============================================
    MODAL (profile / product)
@@ -653,9 +658,11 @@ main { position: relative; z-index: 1; }
 .cta { position: relative; z-index: 1; overflow: hidden; background: var(--red); color: #0a0a0a; padding-block: clamp(90px, 13vw, 170px); isolation: isolate; }
 .cta__bg { position: absolute; inset: 0; z-index: -1; display: flex; flex-direction: column; justify-content: center; gap: 0; transform: rotate(-6deg) scale(1.2); opacity: .16; }
 .cta__bg .marquee__item { font-family: var(--font-display); font-size: clamp(90px, 14vw, 200px); line-height: .95; padding-right: .4em; color: transparent; -webkit-text-stroke: 1.5px #000; }
-.cta__inner { text-align: center; display: flex; flex-direction: column; align-items: center; }
-.cta__label { font-family: var(--font-mono); font-size: 12px; letter-spacing: .32em; margin-bottom: 18px; }
-.cta__title { font-family: var(--font-jp); font-weight: 900; font-size: clamp(40px, 8vw, 104px); line-height: 1.15; letter-spacing: -.02em; margin-bottom: 18px; }
+.cta__inner { text-align: center; display: flex; flex-direction: column; align-items: center; container-type: inline-size; }
+.cta__title { --fit-max: 104px; font-family: var(--font-jp); font-weight: 900; line-height: 1.15; letter-spacing: -.02em; margin-bottom: 18px; }
+
+/* Single-line headline: shrinks with the container instead of wrapping. --fit-len ≈ character count */
+.fit-line { white-space: nowrap; font-size: min(var(--fit-max), calc(100cqi / var(--fit-len))); }
 .cta__text { max-width: 30em; margin-bottom: 36px; font-weight: 500; }
 
 /* =============================================
