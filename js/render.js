@@ -25,10 +25,10 @@ window.KTBN = window.KTBN || {};
   const GENRES = [
     { key: 'shooter', label: 'SHOOTER', games: ['VALORANT', 'CS2', 'Rainbow Six Siege', 'Overwatch 2', 'CoD MW3', 'Escape from Tarkov', 'Splatoon 3'] },
     { key: 'br', label: 'BATTLE ROYALE', games: ['Apex Legends', 'Fortnite', 'PUBG'] },
-    { key: 'moba', label: 'MOBA / STRATEGY', games: ['League of Legends', 'DOTA2', 'Teamfight Tactics'] },
+    { key: 'moba', label: 'MOBA / STRATEGY', games: ['League of Legends', 'DOTA2', 'Teamfight Tactics', 'Shadowverse'] },
     { key: 'fighting', label: 'FIGHTING', games: ['鉄拳8', 'ストリートファイター6', 'グラブルVS'] },
-    { key: 'rpg', label: 'RPG / ACTION', games: ['原神', 'FF14', 'モンスターハンター', 'エルデンリング', 'ダークソウル3', 'SEKIRO'] },
-    { key: 'casual', label: 'CASUAL', games: ['マインクラフト', 'テラリア', 'Stardew Valley', 'モンスト', 'Racket League', 'Rocket League'] }
+    { key: 'rpg', label: 'RPG / ACTION', games: ['原神', 'FF14', 'モンスターハンター', 'エルデンリング', 'ダークソウル3', 'SEKIRO', 'Sword Art Online'] },
+    { key: 'casual', label: 'CASUAL', games: ['マインクラフト', 'テラリア', 'Stardew Valley', 'モンスト', 'モンスターストライク', 'Palworld', 'Racket League', 'Rocket League'] }
   ];
   const genresOf = (m) => GENRES.filter(g => m.games.some(game => g.games.includes(game))).map(g => g.key);
 
@@ -38,7 +38,7 @@ window.KTBN = window.KTBN || {};
     return h >>> 0;
   }
 
-  // Stylised player silhouette used until a real photo exists at m.avatar
+  // Stylised player silhouette used until a real photo exists at m.photo
   function portrait(m, uid) {
     const seed = hash(m.name);
     const gear = seed % 4;
