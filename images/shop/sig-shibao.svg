@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="sh" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#000" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="steel" x1="0" x2="1">
+      <stop offset="0" stop-color="#0a0a0b"/>
+      <stop offset=".3" stop-color="#34343a"/>
+      <stop offset=".52" stop-color="#17171a"/>
+      <stop offset=".78" stop-color="#2b2b30"/>
+      <stop offset="1" stop-color="#09090a"/>
+    </linearGradient>
+    <linearGradient id="heat" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff3b1f"/>
+      <stop offset=".5" stop-color="#ff7a18"/>
+      <stop offset="1" stop-color="#ffc21a"/>
+    </linearGradient>
+    <clipPath id="tumClip">
+      <path d="M312 262 L488 262 L466 610 C465 624 454 634 440 634 L360 634 C346 634 335 624 334 610 Z"/>
+    </clipPath>
+  </defs>
+  <ellipse cx="400" cy="656" rx="160" ry="22" fill="url(#sh)"/>
+  <!-- lid -->
+  <path d="M306 216 L494 216 L490 264 L310 264 Z" fill="#16161a" stroke="#3a3a40" stroke-width="2"/>
+  <ellipse cx="400" cy="216" rx="94" ry="20" fill="#26262c" stroke="#44444b" stroke-width="2"/>
+  <path d="M430 206 C452 206 464 216 452 226 L420 226 Z" fill="#0c0c0e"/>
+  <!-- body -->
+  <path d="M312 262 L488 262 L466 610 C465 624 454 634 440 634 L360 634 C346 634 335 624 334 610 Z" fill="url(#steel)" stroke="#3a3a40" stroke-width="2"/>
+  <g clip-path="url(#tumClip)">
+    <!-- heat gauge -->
+    <rect x="352" y="300" width="18" height="290" rx="9" fill="#101013" stroke="#3a3a40" stroke-width="2"/>
+    <rect x="352" y="356" width="18" height="234" rx="9" fill="url(#heat)"/>
+    <g stroke="#55555d" stroke-width="2">
+      <path d="M378 356 H396 M378 412 H390 M378 468 H396 M378 524 H390"/>
+    </g>
+    <text x="440" y="360" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="54" fill="url(#heat)">RAGE</text>
+    <text x="440" y="392" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" letter-spacing="4" fill="#8f8f93">MAX 98C</text>
+    <text x="436" y="470" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="40" fill="#f2f2f2" letter-spacing="-1">本気</text>
+    <path d="M400 490 H472" stroke="#e0001b" stroke-width="3"/>
+    <text x="436" y="524" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="22" letter-spacing="3" fill="#f2f2f2">SHIBAO</text>
+    <g transform="translate(436 572) scale(.85)">
+      <path d="M0 -18 L12 1 A13 13 0 1 1 -12 1 Z" fill="#e0001b"/>
+      <text x="0" y="11" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="8" fill="#0b0b0c">KTBN</text>
+    </g>
+    <path d="M336 260 V636" stroke="#fff" stroke-opacity=".06" stroke-width="22"/>
+  </g>
+</svg>

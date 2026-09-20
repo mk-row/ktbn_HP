@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="sh" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#000" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fab" x1="0" x2="1">
+      <stop offset="0" stop-color="#070708"/>
+      <stop offset=".18" stop-color="#1c1c1f"/>
+      <stop offset=".44" stop-color="#2b2b30"/>
+      <stop offset=".72" stop-color="#151518"/>
+      <stop offset="1" stop-color="#08080a"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff1f33"/>
+      <stop offset="1" stop-color="#9a000e"/>
+    </linearGradient>
+    <clipPath id="sleeveClip">
+      <path d="M316 224 C316 200 484 200 484 224 L456 590 C456 606 344 606 344 590 Z"/>
+    </clipPath>
+  </defs>
+  <ellipse cx="400" cy="638" rx="140" ry="20" fill="url(#sh)"/>
+  <g transform="rotate(-4 400 400)">
+    <!-- tube body -->
+    <path d="M316 224 C316 200 484 200 484 224 L456 590 C456 606 344 606 344 590 Z" fill="url(#fab)" stroke="#33333a" stroke-width="2"/>
+    <g clip-path="url(#sleeveClip)">
+      <!-- silicone grip band, following the curve -->
+      <path d="M300 246 C340 270 460 270 500 246 L500 292 C460 316 340 316 300 292 Z" fill="#0e0e11"/>
+      <g fill="none" stroke="#3c3c44" stroke-width="2">
+        <path d="M300 256 C340 280 460 280 500 256"/>
+        <path d="M300 270 C340 294 460 294 500 270"/>
+        <path d="M300 284 C340 308 460 308 500 284"/>
+      </g>
+      <!-- fabric folds -->
+      <g fill="none" stroke="#000" stroke-opacity=".3" stroke-width="10">
+        <path d="M352 300 C346 400 350 500 350 592"/>
+        <path d="M448 300 C454 400 450 500 450 592"/>
+      </g>
+      <!-- diagonal accents -->
+      <g stroke="url(#red)" stroke-width="12">
+        <path d="M300 372 L512 330"/>
+        <path d="M300 404 L512 362"/>
+      </g>
+      <path d="M300 440 L512 398" stroke="#e0001b" stroke-opacity=".26" stroke-width="6"/>
+      <!-- marks -->
+      <text x="400" y="534" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="104" fill="#f2f2f2" fill-opacity=".1">03</text>
+      <text x="400" y="494" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="30" letter-spacing="3" fill="#f2f2f2">JJINN</text>
+      <text x="400" y="516" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" letter-spacing="4" fill="#8a8a8e">VANGUARD</text>
+      <!-- cuff -->
+      <path d="M330 556 C360 572 440 572 470 556 L470 606 C440 622 360 622 330 606 Z" fill="#0d0d10"/>
+      <path d="M332 566 C362 582 438 582 468 566" fill="none" stroke="#e0001b" stroke-width="3"/>
+      <g transform="translate(400 598) scale(.66)">
+        <path d="M0 -18 L12 1 A13 13 0 1 1 -12 1 Z" fill="#e0001b"/>
+      </g>
+      <path d="M344 210 V600" stroke="#fff" stroke-opacity=".05" stroke-width="28"/>
+    </g>
+    <!-- top opening -->
+    <ellipse cx="400" cy="224" rx="84" ry="22" fill="#080809" stroke="#3a3a42" stroke-width="2"/>
+    <ellipse cx="400" cy="228" rx="70" ry="16" fill="#030304"/>
+  </g>
+</svg>

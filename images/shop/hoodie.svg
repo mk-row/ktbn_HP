@@ -49,7 +49,7 @@
   </g>
   <!-- chest print -->
   <path d="M400 300 L428 346 A33 33 0 1 1 372 346 Z" fill="url(#red)"/>
-  <text x="400" y="372" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="26" fill="#0b0b0c">血</text>
+  <text x="400" y="370" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="25" textLength="46" lengthAdjust="spacingAndGlyphs" fill="#0b0b0c">KTBN</text>
   <text x="400" y="440" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="27" letter-spacing="4" fill="#f2f2f2">BLOODY STORM</text>
   <rect x="330" y="452" width="140" height="3" fill="#e0001b"/>
   <text x="400" y="478" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="4" fill="#8a8a8a">BLEED OR GO HOME</text>

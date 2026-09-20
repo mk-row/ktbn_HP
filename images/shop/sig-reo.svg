@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="sh" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#000" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="terry" x1="0" x2="1">
+      <stop offset="0" stop-color="#070708"/>
+      <stop offset=".2" stop-color="#1e1e21"/>
+      <stop offset=".46" stop-color="#2d2d32"/>
+      <stop offset=".74" stop-color="#161619"/>
+      <stop offset="1" stop-color="#08080a"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff1f33"/>
+      <stop offset="1" stop-color="#9a000e"/>
+    </linearGradient>
+    <clipPath id="ringClip">
+      <path d="M-124 0 A124 50 0 0 1 124 0 L124 98 A124 50 0 0 0 -124 98 Z"/>
+    </clipPath>
+    <g id="ring">
+      <path d="M-124 0 A124 50 0 0 1 124 0 L124 98 A124 50 0 0 0 -124 98 Z" fill="url(#terry)" stroke="#34343a" stroke-width="2"/>
+      <g clip-path="url(#ringClip)">
+        <g fill="none" stroke="#3e3e46" stroke-opacity=".55" stroke-width="2">
+          <path d="M-130 12 A124 50 0 0 0 130 12"/>
+          <path d="M-130 30 A124 50 0 0 0 130 30"/>
+          <path d="M-130 48 A124 50 0 0 0 130 48"/>
+          <path d="M-130 66 A124 50 0 0 0 130 66"/>
+          <path d="M-130 84 A124 50 0 0 0 130 84"/>
+        </g>
+        <path d="M-130 96 V40 H130 V96 Z" fill="#000" fill-opacity=".28"/>
+      </g>
+      <ellipse cx="0" cy="0" rx="124" ry="50" fill="#0a0a0b" stroke="#3e3e46" stroke-width="2"/>
+      <ellipse cx="0" cy="4" rx="106" ry="40" fill="#040405"/>
+    </g>
+  </defs>
+  <ellipse cx="400" cy="620" rx="230" ry="28" fill="url(#sh)"/>
+  <!-- back band -->
+  <g transform="translate(318 262) rotate(-7)">
+    <use href="#ring"/>
+    <g clip-path="url(#ringClip)">
+      <rect x="-124" y="44" width="248" height="11" fill="#e0001b" fill-opacity=".9"/>
+      <text x="0" y="36" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="38" letter-spacing="4" fill="#f2f2f2">POWER</text>
+      <text x="0" y="78" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" letter-spacing="4" fill="#8f8f95">NO LOVE NO PLAY</text>
+    </g>
+  </g>
+  <!-- front band -->
+  <g transform="translate(486 428) rotate(6) scale(.92)">
+    <use href="#ring"/>
+    <g clip-path="url(#ringClip)">
+      <g transform="translate(-52 52) scale(1.1)">
+        <path d="M0 -20 L13 1 A14.5 14.5 0 1 1 -13 1 Z" fill="url(#red)"/>
+      </g>
+      <text x="34" y="66" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="40" letter-spacing="4" fill="#f2f2f2">REO</text>
+    </g>
+  </g>
+</svg>

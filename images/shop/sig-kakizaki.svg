@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="sh" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#000" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="canvas" x1="0" x2="1">
+      <stop offset="0" stop-color="#0c0c0d"/>
+      <stop offset=".45" stop-color="#232326"/>
+      <stop offset="1" stop-color="#0b0b0c"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff1f33"/>
+      <stop offset="1" stop-color="#9a000e"/>
+    </linearGradient>
+    <clipPath id="toteClip">
+      <path d="M236 292 L564 292 L586 642 C587 656 576 666 562 666 L238 666 C224 666 213 656 214 642 Z"/>
+    </clipPath>
+  </defs>
+  <ellipse cx="400" cy="692" rx="230" ry="26" fill="url(#sh)"/>
+  <path d="M310 300 C310 190 490 190 490 300" fill="none" stroke="#18181a" stroke-width="22" stroke-linecap="round"/>
+  <path d="M310 300 C310 198 490 198 490 300" fill="none" stroke="#2e2e32" stroke-width="7" stroke-linecap="round"/>
+  <path d="M236 292 L564 292 L586 642 C587 656 576 666 562 666 L238 666 C224 666 213 656 214 642 Z" fill="url(#canvas)" stroke="#303034" stroke-width="2"/>
+  <g clip-path="url(#toteClip)">
+    <g stroke="#3a3a3f" stroke-opacity=".35" stroke-width="1">
+      <path d="M260 292 V666 M300 292 V666 M340 292 V666 M380 292 V666 M420 292 V666 M460 292 V666 M500 292 V666 M540 292 V666"/>
+      <path d="M214 340 H586 M214 388 H586 M214 436 H586 M214 484 H586 M214 532 H586 M214 580 H586 M214 628 H586"/>
+    </g>
+    <text x="400" y="492" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="150" fill="url(#red)" letter-spacing="-6">布教</text>
+    <text x="400" y="540" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="25" letter-spacing="4" fill="#f2f2f2">SPREAD THE WORD</text>
+    <text x="400" y="566" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" letter-spacing="4" fill="#87878b">KAKIZAKI // KTBN</text>
+    <path d="M292 356 V400 M508 356 V400" stroke="#e0001b" stroke-opacity=".5" stroke-width="4"/>
+    <path d="M280 664 V300" stroke="#fff" stroke-opacity=".03" stroke-width="44"/>
+  </g>
+  <path d="M236 292 L564 292" stroke="#3d3d42" stroke-width="4"/>
+</svg>

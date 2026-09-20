@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="sh" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#000" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cer" x1="0" x2="1">
+      <stop offset="0" stop-color="#0a0a0b"/>
+      <stop offset=".38" stop-color="#28282b"/>
+      <stop offset=".72" stop-color="#151517"/>
+      <stop offset="1" stop-color="#080809"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff1f33"/>
+      <stop offset="1" stop-color="#9a000e"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="400" cy="626" rx="200" ry="26" fill="url(#sh)"/>
+  <path d="M512 336 C606 336 606 486 512 486" fill="none" stroke="#141416" stroke-width="40" stroke-linecap="round"/>
+  <path d="M512 336 C606 336 606 486 512 486" fill="none" stroke="#2c2c30" stroke-width="16" stroke-linecap="round"/>
+  <path d="M286 306 L514 306 L498 566 C497 582 484 594 468 594 L332 594 C316 594 303 582 302 566 Z" fill="url(#cer)" stroke="#333337" stroke-width="2"/>
+  <ellipse cx="400" cy="306" rx="114" ry="28" fill="#1b1b1e" stroke="#3b3b40" stroke-width="2"/>
+  <ellipse cx="400" cy="308" rx="98" ry="22" fill="#050506"/>
+  <ellipse cx="400" cy="314" rx="92" ry="20" fill="#3a1d0b"/>
+  <g fill="none" stroke="#9a9a9e" stroke-opacity=".3" stroke-width="6" stroke-linecap="round">
+    <path d="M362 268 C348 244 378 232 364 206"/>
+    <path d="M400 258 C386 232 416 220 402 192"/>
+    <path d="M438 268 C424 244 454 232 440 206"/>
+  </g>
+  <text x="400" y="452" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="74" fill="#f2f2f2" letter-spacing="-2">こそ練</text>
+  <rect x="318" y="472" width="164" height="3" fill="#e0001b"/>
+  <text x="400" y="504" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="4" fill="#8f8f93">02:47 AM</text>
+  <g transform="translate(400 544) scale(.9)">
+    <path d="M0 -18 L12 1 A13 13 0 1 1 -12 1 Z" fill="url(#red)"/>
+    <text x="0" y="11" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="8" fill="#0b0b0c">KTBN</text>
+  </g>
+  <path d="M322 320 V584" stroke="#fff" stroke-opacity=".04" stroke-width="30"/>
+</svg>

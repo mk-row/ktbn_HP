@@ -21,13 +21,14 @@
   <path d="M338 180 C358 206 442 206 462 180 C446 192 354 192 338 180 Z" fill="#060606"/>
   <path d="M198 372 L255 336 M602 372 L545 336" stroke="#2c2c2f" stroke-width="3"/>
   <path d="M144 300 L204 380 M656 300 L596 380" stroke="#1c1c1e" stroke-width="10"/>
-  <!-- big print -->
   <g clip-path="url(#body)">
-    <path d="M250 520 L560 400" stroke="#e0001b" stroke-opacity=".18" stroke-width="44"/>
+    <path d="M250 540 L560 420" stroke="#e0001b" stroke-opacity=".14" stroke-width="44"/>
+    <rect x="286" y="372" width="228" height="128" fill="none" stroke="#3f3f44" stroke-width="2"/>
+    <text x="400" y="420" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="5" fill="#8f8f93">CORPORATION</text>
+    <text x="400" y="466" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="38" fill="#f2f2f2" letter-spacing="-1">いくらなんでも</text>
+    <rect x="330" y="480" width="140" height="3" fill="#e0001b"/>
+    <text x="400" y="546" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="26" letter-spacing="4" fill="#f2f2f2">NAYAMEI</text>
+    <text x="400" y="572" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" letter-spacing="4" fill="#7d7d7d">FOUNDER // KTBN</text>
   </g>
-  <text x="400" y="440" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif" font-weight="900" font-size="132" fill="url(#red)" letter-spacing="-4">血便</text>
-  <path d="M322 446 v34 a6 6 0 0 0 12 0 v-34 Z M366 446 v58 a6 6 0 0 0 12 0 v-58 Z M452 446 v22 a6 6 0 0 0 12 0 v-22 Z" fill="#c4000f"/>
-  <text x="400" y="545" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="30" letter-spacing="6" fill="#f2f2f2">BLOODY STORM</text>
-  <text x="400" y="572" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="5" fill="#7d7d7d">KTBN // EST. 2019</text>
   <path d="M390 205 V655" stroke="#fff" stroke-opacity=".03" stroke-width="50"/>
 </svg>

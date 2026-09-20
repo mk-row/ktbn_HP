@@ -9,7 +9,7 @@
     "badges": ["NEW", "LIMITED"],
     "featured": true,
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "description": "ヘビーウェイト裏起毛パーカー。胸に血便エンブレム、背面に大きくクランロゴを刺繍。カラー：黒/ダークレッド。",
+    "description": "ヘビーウェイト裏起毛パーカー。胸にKTBNドロップエンブレム、背面に大きくBLOODY STORMのクランロゴを刺繍。カラー：黒/ダークレッド。",
     "specs": { "素材": "コットン80% / ポリエステル20%", "重さ": "12.4oz ヘビーウェイト", "カラー": "BLACK / DARK RED" }
   },
   {
@@ -21,8 +21,8 @@
     "image": "images/shop/tshirt.svg",
     "badges": [],
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-    "description": "速乾素材クランTシャツ。シンプルながら存在感抜群のデザイン。ゲームプレイ中も快適な着心地。XS〜XXL対応。",
-    "specs": { "素材": "ポリエステル100%（速乾）", "カラー": "BLACK" }
+    "description": "速乾素材のクランTシャツ。胸に「血便」のビッグプリント、裾にKTBNのクレジット。ゲームプレイ中も快適な着心地。XS〜XXL対応。",
+    "specs": { "素材": "ポリエステル100%（速乾）", "プリント": "血便 / BLOODY STORM", "カラー": "BLACK" }
   },
   {
     "id": "mousepad-xl",
@@ -32,19 +32,19 @@
     "unit": "枚",
     "image": "images/shop/mousepad.svg",
     "badges": ["人気"],
-    "description": "900×400mmの特大サイズマウスパッド。血便デザインを全面にプリント。低摩擦表面で精密なAimをサポート。",
+    "description": "900×400mmの特大サイズマウスパッド。KTBNのクランロゴを全面にプリント。低摩擦表面で精密なAimをサポート。",
     "specs": { "サイズ": "900 × 400 × 4 mm", "表面": "コントロール系クロス", "縁": "ステッチ加工" }
   },
   {
     "id": "anniversary-set",
-    "name": "5TH ANNIVERSARY SET",
+    "name": "7TH ANNIVERSARY SET",
     "category": ["accessories", "limited"],
-    "price": 15000,
+    "price": 12800,
     "unit": "セット",
     "image": "images/shop/anniversary-set.svg",
     "badges": ["LIMITED"],
-    "description": "設立5周年記念限定セット。パーカー＋マウスパッド＋ステッカーシートのスペシャルボックス。限定50セット。",
-    "specs": { "内容": "パーカー / マウスパッド / ステッカー", "数量": "限定50セット" }
+    "description": "結成7年を記念した限定セット。BLOOD HOODIE＋GAMING MOUSEPAD XL＋STICKER PACKを専用ボックスに封入。単品合計13,800円のところセット価格で。限定50セット。",
+    "specs": { "内容": "パーカー / マウスパッド / ステッカー", "単品合計": "13,800円", "数量": "限定50セット", "期間": "2019 — 2026" }
   },
   {
     "id": "blood-cap",
@@ -55,7 +55,7 @@
     "image": "images/shop/cap.svg",
     "badges": [],
     "soldOut": true,
-    "description": "ストラップバックキャップ。深紅の刺繍エンブレム入り。フリーサイズ対応。人気につき現在在庫切れ。",
+    "description": "ストラップバックキャップ。前面に深紅のドロップエンブレムとKTBNのロゴを3D刺繍。フリーサイズ対応。人気につき現在在庫切れ。",
     "specs": { "サイズ": "フリー（56〜60cm）", "仕様": "ストラップバック / 3D刺繍" }
   },
   {
@@ -66,7 +66,7 @@
     "unit": "セット",
     "image": "images/shop/stickers.svg",
     "badges": [],
-    "description": "血便オリジナルステッカー10枚セット。PC・スマホ・ヘッドセットに貼ってクランをアピール。防水素材使用。",
+    "description": "KTBNオリジナルステッカー10枚セット。ドロップエンブレム、BLEED OR GO HOME、GG WPなどを収録。PC・スマホ・ヘッドセットに貼ってクランをアピール。",
     "specs": { "枚数": "10枚", "素材": "耐水 / 耐候PVC" }
   },
   {
@@ -78,7 +78,7 @@
     "image": "images/shop/gloves.svg",
     "badges": ["NEW"],
     "sizes": ["S", "M", "L"],
-    "description": "指先カット型ゲーミンググローブ。汗を素早く吸収・拡散し、長時間のゲームプレイをサポート。血便ロゴ入り。",
+    "description": "指先カット型ゲーミンググローブ。汗を素早く吸収・拡散し、長時間のゲームプレイをサポート。甲にドロップエンブレム、リストストラップにKTBNロゴ入り。",
     "specs": { "素材": "ナイロン / スパンデックス", "仕様": "フィンガーレス / 面ファスナー" }
   },
   {
@@ -89,7 +89,99 @@
     "unit": "枚",
     "image": "images/shop/poster.svg",
     "badges": ["LIMITED"],
-    "description": "A2サイズ高品質ポスター。クランアートワークを大迫力で部屋に飾ろう。アート紙使用、額装なし。限定100枚。",
+    "description": "A2サイズ高品質ポスター。「血」の一文字を大胆に配したクランアートワーク。アート紙使用、額装なし。限定100枚、シリアルナンバー入り。",
     "specs": { "サイズ": "A2（420 × 594 mm）", "数量": "限定100枚（シリアル入り）" }
+  },
+  {
+    "id": "sig-kuni",
+    "name": "CAPTAIN ARMBAND",
+    "category": ["signature", "apparel"],
+    "price": 2400,
+    "unit": "本",
+    "image": "images/shop/sig-kuni.svg",
+    "badges": ["SIGNATURE"],
+    "sizes": ["FREE"],
+    "description": "Kuni シグネチャー。KTBNを結成した男が巻く、No.01のキャプテンマーク。Rocket Leagueでゴールを守り続ける背中に、一本だけ許された腕章。",
+    "specs": { "メンバー": "Kuni（リーダー / No.01）", "サイズ": "フリー（面ファスナー式）", "素材": "ポリエステル / ゴムバンド" }
+  },
+  {
+    "id": "sig-cokemaru",
+    "name": "KOSOREN MUG",
+    "category": ["signature", "accessories"],
+    "price": 2600,
+    "unit": "個",
+    "image": "images/shop/sig-cokemaru.svg",
+    "badges": ["SIGNATURE"],
+    "description": "cokemaru シグネチャー。誰も見ていない時間にこそ差がつく。「こそ練」の二文字と 02:47 AM の刻印入りマグ。明日の朝、何食わぬ顔をするための一杯に。",
+    "specs": { "メンバー": "cokemaru（こそ練団長）", "容量": "330ml", "素材": "陶器（マットブラック釉）", "対応": "電子レンジ可 / 食洗機可" }
+  },
+  {
+    "id": "sig-jjinn",
+    "name": "VANGUARD ARM SLEEVE",
+    "category": ["signature", "apparel"],
+    "price": 2900,
+    "unit": "本",
+    "image": "images/shop/sig-jjinn.svg",
+    "badges": ["SIGNATURE"],
+    "sizes": ["S", "M", "L"],
+    "description": "JJINN シグネチャー。切り込み隊長のためのアームスリーブ。上端のシリコングリップでズレを抑え、肘から先を安定させる。マスター帯のエイムを支えた一本。",
+    "specs": { "メンバー": "JJINN（切り込み隊長 / Apex マスター）", "素材": "ナイロン / スパンデックス", "仕様": "UVカット / シリコングリップ", "片腕": "1本入り" }
+  },
+  {
+    "id": "sig-kakizaki",
+    "name": "MISSIONARY TOTE",
+    "category": ["signature", "accessories"],
+    "price": 3200,
+    "unit": "枚",
+    "image": "images/shop/sig-kakizaki.svg",
+    "badges": ["SIGNATURE"],
+    "description": "kakizaki シグネチャー。Overwatchを布教するために現れた男の、布教用トート。「布教」の二文字を掲げて歩けば、道行く人もゲンジを握る。中身はだいたいゲームの話。",
+    "specs": { "メンバー": "kakizaki（布教担当 / ゲンジ使い）", "サイズ": "W360 × H400 × D110 mm", "素材": "キャンバス12oz", "仕様": "内ポケット×1" }
+  },
+  {
+    "id": "sig-nayamei",
+    "name": "IKURA-NANDEMO TEE",
+    "category": ["signature", "apparel"],
+    "price": 4800,
+    "unit": "枚",
+    "image": "images/shop/sig-nayamei.svg",
+    "badges": ["SIGNATURE"],
+    "sizes": ["M", "L", "XL", "XXL", "XXXL"],
+    "description": "nayamei シグネチャー。株式会社いくらなんでも、公式社名Tシャツ。ブラジルの町に住む巨漢の肩幅に合わせ、XXXLまで用意した。着た者にはワザップを試す義務が生じる。",
+    "specs": { "メンバー": "nayamei（創設者 / 株式会社いくらなんでも）", "素材": "コットン100%", "サイズ": "M 〜 XXXL", "カラー": "BLACK" }
+  },
+  {
+    "id": "sig-reo",
+    "name": "POWER WRISTBAND",
+    "category": ["signature", "apparel"],
+    "price": 1800,
+    "unit": "組",
+    "image": "images/shop/sig-reo.svg",
+    "badges": ["SIGNATURE"],
+    "sizes": ["FREE"],
+    "description": "reo シグネチャー。筋トレで鍛え上げたパワーエイムを支えるリストバンド2本組。「NO LOVE NO PLAY」の一文入り。効率は、ここには書かれていない。",
+    "specs": { "メンバー": "reo（パワーエイム担当）", "入数": "2本組", "素材": "コットンパイル / ゴム", "サイズ": "フリー（手首15〜20cm）" }
+  },
+  {
+    "id": "sig-rowmine",
+    "name": "SAFE DRIVE CHARM",
+    "category": ["signature", "accessories"],
+    "price": 1500,
+    "unit": "個",
+    "image": "images/shop/sig-rowmine.svg",
+    "badges": ["SIGNATURE"],
+    "description": "rowmine シグネチャー。車を全損させた男が贈る、交通安全お守り。効果は本人が身をもって証明できなかったが、願いだけは本物である。キーホルダーとしても。",
+    "specs": { "メンバー": "rowmine（Web管理 / 諸悪の根源）", "サイズ": "W45 × H70 mm", "素材": "金襴生地 / 金糸刺繍", "仕様": "紐付き（キーリング可）" }
+  },
+  {
+    "id": "sig-shibao",
+    "name": "RAGE TUMBLER",
+    "category": ["signature", "accessories"],
+    "price": 3600,
+    "unit": "個",
+    "image": "images/shop/sig-shibao.svg",
+    "badges": ["SIGNATURE"],
+    "description": "shibao シグネチャー。熱が冷めない男のための真空断熱タンブラー。側面のゲージは常にMAXを指している。本気で挑み、本気で怒り、本気で楽しむための一本。",
+    "specs": { "メンバー": "shibao（熱量担当）", "容量": "480ml", "構造": "ステンレス真空二重", "保温": "6時間 / 保冷 12時間" }
   }
 ]

@@ -386,7 +386,7 @@ window.KTBN = window.KTBN || {};
   /* =============================================
      SHOP
      ============================================= */
-  const CAT_LABEL = { apparel: 'APPAREL', accessories: 'ACCESSORIES', limited: 'LIMITED' };
+  const CAT_LABEL = { apparel: 'APPAREL', accessories: 'ACCESSORIES', limited: 'LIMITED', signature: 'SIGNATURE' };
 
   function openProduct(p) {
     const sizes = p.sizes ? `
@@ -429,7 +429,7 @@ window.KTBN = window.KTBN || {};
             <img src="${esc(feat.image)}" alt="${esc(feat.name)}">
           </div>
           <div class="feature__body" data-stagger=".08">
-            <p class="feature__kicker" data-reveal="up">WINTER COLLECTION 2024</p>
+            <p class="feature__kicker" data-reveal="up">OFFICIAL COLLECTION 2026</p>
             <h2 class="feature__title" data-reveal="up">${esc(feat.name)}</h2>
             <p class="feature__text" data-reveal="up">${esc(feat.description)}</p>
             <p class="feature__price" data-reveal="up">${yen(feat.price)}<small>税込</small></p>
@@ -465,7 +465,7 @@ window.KTBN = window.KTBN || {};
       });
 
       if (tabsEl) {
-        const cats = ['all', 'apparel', 'accessories', 'limited'];
+        const cats = ['all', 'signature', 'apparel', 'accessories', 'limited'];
         tabsEl.innerHTML = cats.map((c, k) => {
           const n = c === 'all' ? products.length : products.filter(p => p.category.includes(c)).length;
           return `<button type="button" role="tab" class="tab${k === 0 ? ' is-active' : ''}" aria-selected="${k === 0}" data-filter="${c}">${c === 'all' ? 'ALL' : CAT_LABEL[c]}<sup>${pad(n)}</sup></button>`;

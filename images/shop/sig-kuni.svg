@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="sh" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#000" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff2438"/>
+      <stop offset=".55" stop-color="#d1001a"/>
+      <stop offset="1" stop-color="#7d000c"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".45" stop-color="#fff" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="bandClip">
+      <path d="M168 302 C300 266 500 266 632 302 L632 502 C500 538 300 538 168 502 Z"/>
+    </clipPath>
+  </defs>
+  <ellipse cx="400" cy="620" rx="250" ry="28" fill="url(#sh)"/>
+  <path d="M168 302 C300 266 500 266 632 302 L632 502 C500 538 300 538 168 502 Z" fill="url(#band)" stroke="#5c000a" stroke-width="2"/>
+  <g clip-path="url(#bandClip)">
+    <g stroke="#0b0b0c" stroke-opacity=".82" stroke-width="20">
+      <path d="M150 560 L280 250"/>
+      <path d="M600 560 L730 250"/>
+    </g>
+    <text x="400" y="456" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="168" fill="#f7f7f7">C</text>
+    <text x="400" y="338" text-anchor="middle" font-family="'Courier New',monospace" font-size="15" letter-spacing="7" fill="#ffd9dd">CAPTAIN</text>
+    <text x="232" y="424" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="46" fill="#f7f7f7" fill-opacity=".92">01</text>
+    <g transform="translate(566 396) scale(1.5)">
+      <path d="M0 -20 L13 1 A14.5 14.5 0 1 1 -13 1 Z" fill="#0b0b0c"/>
+      <text x="0" y="12" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="9" fill="#f7f7f7">KTBN</text>
+    </g>
+    <rect x="150" y="300" width="500" height="46" fill="url(#gloss)"/>
+  </g>
+  <path d="M168 302 C300 266 500 266 632 302" fill="none" stroke="#ff8b97" stroke-opacity=".55" stroke-width="3"/>
+  <path d="M168 502 C300 538 500 538 632 502" fill="none" stroke="#4d0008" stroke-width="3"/>
+  <path d="M632 302 L672 318 L672 486 L632 502 Z" fill="#9c0012" stroke="#5c000a" stroke-width="2"/>
+  <g stroke="#6d000d" stroke-width="2" stroke-opacity=".8">
+    <path d="M642 330 V474 M652 326 V478 M662 322 V482"/>
+  </g>
+</svg>

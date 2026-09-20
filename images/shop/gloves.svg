@@ -38,7 +38,7 @@
       <rect x="-104" y="100" width="208" height="64" rx="10" fill="#e0001b"/>
       <rect x="-104" y="100" width="208" height="64" rx="10" fill="none" stroke="#6a0009" stroke-width="3"/>
     </g>
-    <text id="strap" x="0" y="140" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="21" letter-spacing="2" fill="#0b0b0c">BLOODY STORM</text>
+    <text id="strap" x="0" y="140" text-anchor="middle" font-family="Impact,'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="21" letter-spacing="2" fill="#0b0b0c">KTBN GAMING</text>
   </defs>
   <ellipse cx="400" cy="660" rx="300" ry="34" fill="url(#sh)"/>
   <g transform="translate(300 420) rotate(-12)">
