@@ -28,7 +28,7 @@ window.KTBN = window.KTBN || {};
     { key: 'moba', label: 'MOBA / STRATEGY', games: ['League of Legends', 'DOTA2', 'Teamfight Tactics', 'Shadowverse'] },
     { key: 'fighting', label: 'FIGHTING', games: ['鉄拳8', 'ストリートファイター6', 'グラブルVS'] },
     { key: 'rpg', label: 'RPG / ACTION', games: ['原神', 'FF14', 'モンスターハンター', 'エルデンリング', 'ダークソウル3', 'SEKIRO', 'Sword Art Online'] },
-    { key: 'casual', label: 'CASUAL', games: ['マインクラフト', 'テラリア', 'Stardew Valley', 'モンスト', 'モンスターストライク', 'Palworld', 'Racket League', 'Rocket League'] }
+    { key: 'casual', label: 'CASUAL', games: ['マインクラフト', 'テラリア', 'Stardew Valley', 'モンスト', 'モンスターストライク', 'Palworld', 'Racket League', 'Rocket League', 'ホロライブドリームス'] }
   ];
   const genresOf = (m) => GENRES.filter(g => m.games.some(game => g.games.includes(game))).map(g => g.key);
 
